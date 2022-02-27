@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Chelsea Market', cursive;
 }
 
 body {
@@ -8,7 +9,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+}
 
+#main-header {
+    text-align: center;
+    padding: 3rem;
+    font-size: 300%;
 }
 
 #rock {
@@ -29,4 +35,9 @@ button {
     width: 200px;
     border-radius: 5px;
     border-color: orange;
+}
+
+#three-buttons {
+    position: relative;
+    text-align: center;
 }
