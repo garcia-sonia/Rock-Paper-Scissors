@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+body {
+    background-image: url(../images/summer-5350229_1920.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
 #rock {
     background-image: url(../images/rock-paper-scissors-296854.svg);
     }
