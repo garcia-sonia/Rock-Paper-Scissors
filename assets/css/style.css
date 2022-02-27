@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#rock {
+    background-image: url(../images/rock-paper-scissors-296854.svg);
+    }
+
+#paper {
+background-image: url(../images/rock-paper-scissors-296855.svg);
+}
+
+#scissors {
+    background-image: url(../images/rock-paper-scissors-296853.svg);
+    
+}
+
+button {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    border-color: orange;
+}
