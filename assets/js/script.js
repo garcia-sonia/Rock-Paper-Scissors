@@ -1,11 +1,11 @@
 const computerPicksShow = document.getElementById('computer-picks')
-const userPicksShow = document.getElementById('you-pick')
+const youPickShow = document.getElementById('you-pick')
 const whoWinsShow = document.getElementById('who-wins')
 const differentChoices = document.querySelectorAll('button')
 
-let userPicks
+let youPick
 
-differentChoices.forEach(differentChoice => differentChoice.addEvent.Listener('click', (e) => {
-    userPicks = e.target.id
-    userPicksShow.innerHTML = userPicks
+differentChoices.forEach(differentChoice => differentChoice.addEventListener('click', (e) => {
+    youPick = e.target.id
+    youPickShow.innerHTML = youPick
 }))
