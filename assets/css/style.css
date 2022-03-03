@@ -42,3 +42,8 @@ button {
     position: relative;
     text-align: center;
 }
+
+#current-game-display {
+    text-align: center;
+    font-size: 150%;
+}
