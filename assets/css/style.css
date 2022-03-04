@@ -47,3 +47,8 @@ button {
     text-align: center;
     font-size: 150%;
 }
+
+#counter {
+    display: grid;
+    grid-template-columns: auto-auto;
+}
