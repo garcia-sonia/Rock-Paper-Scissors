@@ -46,9 +46,13 @@ button {
 #current-game-display {
     text-align: center;
     font-size: 150%;
+    float: left;
 }
+
 
 #counter {
     display: grid;
     grid-template-columns: auto-auto;
+    text-align: center;
+    float: right;
 }
