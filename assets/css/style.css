@@ -42,17 +42,29 @@ button {
     position: relative;
     text-align: center;
 }
-
-#current-game-display {
-    text-align: center;
-    font-size: 150%;
+#current-game-container {
     float: left;
+    width: 30%;
+    padding: 2rem;
+}
+#current-game-display {
+    font-size: 150%;
+    float: right;
 }
 
+#counter-container {
+    float: right;
+    width: 30%;
+    padding: 2rem;
+}
 
-#counter {
+#counter-display {
     display: grid;
     grid-template-columns: auto-auto;
     text-align: center;
-    float: right;
+    float: left;
+}
+
+.clear {
+    clear: both;
 }
