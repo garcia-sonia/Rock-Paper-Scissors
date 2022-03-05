@@ -46,7 +46,7 @@ button {
 #game-status {
     text-align: center;
     position: relative;
-    padding: 2rem;
+    padding: 0 2rem;
 }
 
 #current-game-container {
