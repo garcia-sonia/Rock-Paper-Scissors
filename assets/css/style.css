@@ -13,7 +13,7 @@ body {
 
 #main-header {
     text-align: center;
-    padding: 3rem;
+    padding: 1rem;
     font-size: 300%;
 }
 
@@ -56,8 +56,7 @@ button {
 
 
 #current-game-display {
-    font-size: 150%;
-    
+    font-size: 120%;  
 }
 
 #counter-container {
@@ -70,7 +69,7 @@ button {
 .header {
     text-align: center;
     padding-bottom: 1rem;
-    font-size: 250%;
+    font-size: 200%;
 }
 
 #counter-display {
@@ -79,7 +78,7 @@ button {
     width: 600px;
     margin-right: auto;
     margin-left: auto;
-    font-size: 150%;
+    font-size: 120%;
     text-align: center;
 }
 
