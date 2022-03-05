@@ -75,7 +75,7 @@ button {
 #counter-display {
     display: grid;
     grid-template-columns: auto auto;
-    width: 600px;
+    width: 500px;
     margin-right: auto;
     margin-left: auto;
     font-size: 120%;
@@ -91,7 +91,7 @@ button {
 }
 
 .counter-score {
-    font-size: 300%;
+    font-size: 200%;
 }
 .clear {
     clear: both;
