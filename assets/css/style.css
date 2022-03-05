@@ -56,6 +56,13 @@ button {
     float: right;
     width: 30%;
     padding: 2rem;
+    font-family: 'Chelsea Market', cursive;
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 250%;
 }
 
 #counter-display {
@@ -63,8 +70,8 @@ button {
     grid-template-columns: auto auto;
     text-align: center;
     float: left;
-    font-family: 'Chelsea Market', cursive;
     font-size: 150%;
+    text-align: center;
 }
 
 .counter-name, .counter-score {
