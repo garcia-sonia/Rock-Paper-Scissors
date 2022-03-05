@@ -31,9 +31,9 @@ background-image: url(../images/rock-paper-scissors-296855.svg);
 }
 
 button {
-    height: 150px;
-    width: 150px;
-    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
     border-color: orange;
 }
 
