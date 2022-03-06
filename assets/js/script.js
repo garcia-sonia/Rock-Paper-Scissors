@@ -1,7 +1,7 @@
-const computerPicksShow = document.getElementById('computer-picks')
-const youPickShow = document.getElementById('you-pick')
-const whoWinsShow = document.getElementById('who-wins')
-const differentChoices = document.querySelectorAll('button')
+const computerPicksShow = document.getElementById('computer-picks');
+const youPickShow = document.getElementById('you-pick');
+const whoWinsShow = document.getElementById('who-wins');
+const differentChoices = document.querySelectorAll('button');
 
 let youPick
 let computerPicks
@@ -43,10 +43,12 @@ function calculateResult () {
 
     if (computerPicks === 'rock' && youPick === 'paper') {
         result = 'You win! &#128515'
+        win ();
     }
 
     if (computerPicks === 'paper' && youPick === 'scissors') {
         result = 'You win! &#128515'
+        win ();
     }
 
     if (computerPicks === 'paper' && youPick === 'rock') {
@@ -55,6 +57,7 @@ function calculateResult () {
 
     if (computerPicks === 'scissors' && youPick === 'rock') {
         result = 'You win! &#128515'
+        win ();
     }
 
     if (computerPicks === 'scissors' && youPick === 'paper') {
@@ -62,4 +65,16 @@ function calculateResult () {
     }
 
     whoWinsShow.innerHTML = result
+}
+
+let computerScore = 0;
+let userScore = 0;
+let userScoreShow = document.getElementById('user-score');
+let computerScoreShow = document.getElementById('computer-score');
+let scoreBoardShow = document.querySelector('counter-display');
+
+function win (youPick, computerPicks) {
+    userScore ++;
+    userScoreShow.innerHTML = userScore;
+    computerScoreShow.innerHTML = computerScore;
 }
