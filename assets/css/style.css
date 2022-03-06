@@ -96,3 +96,34 @@ button {
 .clear {
     clear: both;
 }
+
+/* winners modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    margin-top: 15%;
+    margin-left: 30%;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 40%;
+    background: rgb(255, 165, 0);
+    border-style: solid;
+  }
+
+.modal-header {
+    margin-top: 1rem;
+}
+
+.modal-content {
+
+}
+
+.again {
+    
+    background: white;
+    border-style: solid;
+    border-radius: 25px;
+}

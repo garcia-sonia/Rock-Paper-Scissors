@@ -89,3 +89,20 @@ let userScoreShow = document.getElementById('user-score');
 let computerScoreShow = document.getElementById('computer-score');
 let scoreBoardShow = document.querySelector('counter-display');
 
+/** Announce the winner using a Modal box (When a players scores 3 points the game ends and the winner is declared) */
+
+const endModal = getElementsByClassName('modal')[0];
+const modalHeader = getElementsByClassName('modal-header')[0];
+const modalContent = getElementsByClassName('modal-content')[0];
+
+function winner () {
+    if (userScore === 3) {
+        endModal.style.display = 'block';
+        modalHeader.text.content = 'You won, matey!';
+        modalContent.text.content = `Your score: ${userScore} / Redbear's Score: ${computersScore}`;
+    } else if (computerScore === 3) {
+        endModal.style.display = 'block';
+        modalHeader.text.content = 'You lost matey, but you can try again!';
+        modalContent.text.content = `Your score: ${userScore} / Redbear's Score: ${computersScore}`;
+    }
+}
