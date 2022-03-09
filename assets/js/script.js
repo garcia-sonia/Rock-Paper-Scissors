@@ -70,12 +70,12 @@ function calculateResult() {
 
 function win() {
     userScoreShow.innerHTML = ++userScore;
-    winner();
+    modalWinner();
 }
 
 function lose() {
     computerScoreShow.innerHTML = ++computerScore;
-    winner();
+    modalWinner();
 }
 
 
@@ -90,14 +90,14 @@ const endModal = document.getElementsByClassName('modal')[0];
 const modalHeader = document.getElementsByClassName('modal-header')[0];
 const modalText = document.getElementsByClassName('modal-content')[0];
 
-function winner() {
+function modalWinner() {
     if (userScore === 3) {
         endModal.style.display = 'block';
         modalHeader.textContent = 'You won, matey!';
         modalText.textContent = `Your score: ${userScore} / Redbear's Score: ${computerScore}`;
     } else if (computerScore === 3) {
         endModal.style.display = 'block';
-        modalHeader.text.content = 'You lost matey, but you can try again!';
-        modalContent.text.content = `Your score: ${userScore} / Redbear's Score: ${computersScore}`;
+        modalHeader.textContent = 'You lost matey, but you can try again!';
+        modalText.textContent = `Your score: ${userScore} / Redbear's Score: ${computerScore}`;
     }
 }
