@@ -21,7 +21,7 @@ Array.from(differentChoices).forEach(differentChoice => differentChoice.addEvent
 }))
 
 function generateComputerPicks() {
-    const anyNumber = Math.floor(Math.random() * 3) -1;
+    const anyNumber = Math.floor(Math.random() * differentChoices.length) +1;
 
     const choices = ['rock', 'paper', 'scissors'];
     computerPicks = choices[anyNumber] || 'rock';
