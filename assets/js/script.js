@@ -93,11 +93,11 @@ const modalText = document.getElementsByClassName('modal-content')[0];
 function modalWinner() {
     if (userScore === 3) {
         endModal.style.display = 'block';
-        modalHeader.textContent = 'Shiver me timbers! You\'ve defeated the mighty Redbeard! You found treasure, matey! &#129321;';
+        modalHeader.textContent = 'Shiver me timbers! You\'ve defeated the mighty Redbeard!';
         modalText.textContent = `Your score: ${userScore} / Redbear's Score: ${computerScore}`;
     } else if (computerScore === 3) {
         endModal.style.display = 'block';
-        modalHeader.textContent = 'Redbear wins, it\'s time to walk the planck or you can play again to find treasure!';
+        modalHeader.textContent = 'Redbear wins, better luck next time!';
         modalText.textContent = `Your score: ${userScore} / Redbear's Score: ${computerScore}`;
     }
 }
