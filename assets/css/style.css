@@ -103,29 +103,42 @@ button {
     display: none;
     position: fixed;
     z-index: 1;
-    margin-top: 15%;
+    margin: 15%;
     margin-left: 30%;
     left: 0;
     top: 0;
-    width: 50%;
-    height: 40%;
-    background: rgb(255, 165, 0);
-    
+    width: 40%;
+    height: 60%;
+    background-color: aqua;
+    border-color: aliceblue;
     border-style: solid;
     border-radius: 25px;
   }
 
+
+
 .modal-header {
-    margin-top: 1rem;
+text-align: center;
+padding: 1rem;
 }
 
 .modal-content {
-
+margin: 1 rem;
+text-align: center;
+padding: 1rem; 
 }
 
+.modal-image {
+    text-align: center;
+    padding: 1 rem;
+    margin: 0 auto;
+}
+
+
 .again {
-    
-    background: white;
+    text-align: center;
+    background: yellow;
     border-style: solid;
+    border-color: yellow;
     border-radius: 25px;
 }
