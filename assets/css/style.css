@@ -111,6 +111,7 @@ button {
     height: 40%;
     background: rgb(255, 165, 0);
     border-style: solid;
+    border-radius: 25px;
   }
 
 .modal-header {
