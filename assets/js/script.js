@@ -83,7 +83,7 @@ function lose() {
 
 let userScoreShow = document.getElementById('user-score');
 let computerScoreShow = document.getElementById('computer-score');
-let scoreBoardShow = document.querySelector('counter-display');
+
 
 /** Announce the winner using a Modal box (When a players scores 3 points the game ends and the winner is declared) */
 
@@ -123,4 +123,9 @@ function newGame() {
     userScore = 0;
     computerScore = 0;
 document.getElementsByClassName('again');
+whoWinsShow.innerHTML = '';
+youPickShow.innerHTML = '';
+computerPicksShow.innerHTML = '';
+userScoreShow.innerHTML = 0;
+computerScoreShow.innerHTML = 0;
 }
