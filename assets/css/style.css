@@ -129,16 +129,10 @@ padding: 1rem;
 }
 
 .modal-image {
-    text-align: center;
+    
     padding: 1 rem;
     margin: 0 auto;
 }
 
 
-.again {
-    text-align: center;
-    background: yellow;
-    border-style: solid;
-    border-color: yellow;
-    border-radius: 25px;
-}
+

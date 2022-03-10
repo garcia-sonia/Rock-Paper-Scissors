@@ -1,7 +1,8 @@
 const computerPicksShow = document.getElementById('computer-picks');
 const youPickShow = document.getElementById('you-pick');
 const whoWinsShow = document.getElementById('who-wins');
-const differentChoices = document.getElementsByClassName('button');
+const differentChoices = document.getElementsByClassName('choice');
+
 
 let youPick;
 let computerPicks;
@@ -100,4 +101,26 @@ function modalWinner() {
         modalHeader.textContent = 'Redbear wins, better luck next time!';
         modalText.textContent = `Your score: ${userScore} / Redbear's Score: ${computerScore}`;
     }
+}
+
+
+/**
+ * Setting up the Play again function.
+ */
+
+ const againButton = document.getElementsByClassName('again')[0];
+
+ againButton.addEventListener('click', () => {
+    closeModal(endModal);
+});
+
+ function closeModal() {
+    endModal.style.display = 'none';
+    newGame(scoreHTML, computerHTML);
+}
+
+function newGame() {
+    userScore = 0;
+    computerScore = 0;
+document.getElementsByClassName('again');
 }
