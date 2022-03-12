@@ -33,13 +33,6 @@ body {
     border-style: solid;
   }
 
-
-
-
-
-
-
-
 #rock {
     background-image: url(../images/rock-paper-scissors-296854.svg);
     }
@@ -96,12 +89,11 @@ button {
 #game-status {
     text-align: center;
     position: relative;
-    padding: 0 2rem;
 }
 
 #current-game-container {
-    padding: 0 2rem;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 
@@ -111,7 +103,6 @@ button {
 
 #counter-container {
     text-align: center;
-    padding: 2rem;
     font-family: 'Chelsea Market', cursive;
     
 }
