@@ -18,7 +18,7 @@ body {
 }
 
 /* The Game Rules Modal (content hidden by default) */
-.rules-modal {
+.rules-modal, .end-game-modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -133,19 +133,7 @@ button {
 
 /* winners modal */
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 10%;
-    top: 10%;
-    width: 80%;
-    height: 80%;
-    background-color: rgb(110, 223, 223);
-    border-color: #fff;
-    border-style: solid;
-    border-radius: 25px;
-  }
+
 
 .winner-modal {
     position: relative;
