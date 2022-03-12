@@ -79,10 +79,29 @@ function lose() {
     modalWinner();
 }
 
-
-
 let userScoreShow = document.getElementById('user-score');
 let computerScoreShow = document.getElementById('computer-score');
+
+
+
+/* Set up a button to open (on click) modal box with instructions on how to play the rock, paper, scissors game */
+    //Declare About Button Variables - Game Instructions Pop Out (Modal) Box
+    const rulesBox = document.getElementsByClassName('rules-modal')[0];
+    const rulesButton = document.getElementsByClassName('rules')[0];
+    const closeSpan = document.getElementsByClassName('close')[0];
+
+    // When user clicks the Game Rules Button, modal box with rules opens 
+    rulesButton.addEventListener('click', () => {
+        rulesBox.style.display = 'block';  
+    });
+
+    // When user clicks on (x), rules modal closes
+    closeSpan.addEventListener('click', () => {
+        rulesBox.style.display = 'none';
+    });
+
+
+
 
 
 
