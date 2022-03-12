@@ -50,7 +50,7 @@ button {
     height: 100px;
     width: 100px;
     border-radius: 25px;
-    border-color: rgb(255, 165, 0);
+    border-color: rgb(255, 166, 0);
     font-size: 150%;
     background-color: rgba(0, 0, 255, 0.884);
     color: #fff;
@@ -64,7 +64,7 @@ button {
 
 .rules {
     height: 50px;
-    width: 300px;
+    width: 250px;
     margin-bottom: 1rem;
 }
 
@@ -121,6 +121,7 @@ button {
     margin-left: auto;
     font-size: 120%;
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .counter-name, .counter-score {
@@ -163,5 +164,25 @@ font-size: 200%;
     padding-bottom: 2rem;
 }
 
+/* media queriers for screens 650px wide and under */
+
+@media screen and (max-width:650px) {
+
+#counter-display {
+    width: 280px;
+    font-size: 100%;
+}
+
+}
 
 
+/* media queriers for screens 400px wide and under */
+
+@media screen and (max-width:400px) {
+
+    button {
+        height: 80px;
+        width: 80px;
+    }
+
+}
