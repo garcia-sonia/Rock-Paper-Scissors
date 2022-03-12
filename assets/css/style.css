@@ -17,6 +17,26 @@ body {
     font-size: 300%;
 }
 
+/* The Game Rules Modal (content hidden by default) */
+.rules-modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 1rem;
+    left: 40%;
+    top: 40%;
+    width: 50%;
+    height: 50%;
+    
+  }
+
+
+
+
+
+
+
+
 #rock {
     background-image: url(../images/rock-paper-scissors-296854.svg);
     }
@@ -36,13 +56,23 @@ button {
     border-radius: 25px;
     border-color: rgb(255, 165, 0);
     font-size: 150%;
+    background-color: rgba(0, 0, 255, 0.884);
+    color: #fff;
 }
 
-#three-buttons {
+.game-controls {
     padding: 1rem;
     position: relative;
     text-align: center;
 }
+
+.rules {
+    height: 50px;
+    width: 300px;
+    margin-bottom: 1rem;
+}
+
+
 
 #game-status {
     text-align: center;
@@ -116,6 +146,7 @@ button {
 
 .winner-modal {
     position: relative;
+    text-align: center;
 }
 
 .modal-header {
