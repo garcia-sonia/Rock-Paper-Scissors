@@ -75,7 +75,23 @@ button {
     margin-bottom: 1rem;
 }
 
+.rules-content {
+    font-size: 130%;
+}
 
+.rules-header {
+    padding: 2rem;
+} 
+
+.close {
+    margin: 2rem;
+    height: 70px;
+    width: 70px;
+}
+
+.rules-image {
+    padding: 2rem;
+}
 
 #game-status {
     text-align: center;
@@ -153,7 +169,7 @@ font-size: 200%;
 }
 
 .modal-image {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 
