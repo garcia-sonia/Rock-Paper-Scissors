@@ -119,8 +119,8 @@ let computerScoreShow = document.getElementById('computer-score');
 /** Announce the winner using a Modal box (When a players scores 3 points the game ends and the winner is declared) */
 
 const endModal = document.getElementsByClassName('end-game-modal')[0];
-const modalHeader = document.getElementsByClassName('modal-header')[0];
-const modalText = document.getElementsByClassName('modal-content')[0];
+const modalHeader = document.getElementsByClassName('end-modal-header')[0];
+const modalText = document.getElementsByClassName('end-modal-content')[0];
 
 function modalWinner() {
     if (userScore === 3) {

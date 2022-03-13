@@ -152,20 +152,22 @@ button {
     text-align: center;
 }
 
-.modal-header {
+.end-modal-header {
     padding: 2rem;
     font-size: 200%;
 }
 
-.modal-content {
+.end-modal-content {
     margin-bottom: 2rem;
     text-align: center;
     padding: 1rem;
     font-size: 200%;
 }
 
-.modal-image {
+.end-modal-image {
     padding-bottom: 2rem;
+    width: 300px;
+    height: 195px;
 }
 
 
@@ -205,14 +207,19 @@ button {
         font-size: 150%;
     }
 
-    .modal-header {
+    .end-modal-header {
         padding: 1rem;
-        font-size: 140%;
+        font-size: 200%;
     }
 
-    .modal-content {
+    .end-modal-content {
         padding-top: 1rem;
-        font-size: 120%;
+        font-size: 150%;
+    }
+
+    .end-modal-image {
+        width: 200px;
+        height: 130px;
     }
 
     button {
