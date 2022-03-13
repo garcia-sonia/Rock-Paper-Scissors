@@ -164,6 +164,10 @@ button:hover {
     font-size: 120%;
 }
 
+.rules-content ul li {
+    list-style-type: none;
+}
+
 .rules-header {
     padding: 1rem;
     text-decoration: underline;
