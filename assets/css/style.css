@@ -76,18 +76,18 @@ button:hover {
 }
 
 .rules-content {
-    font-size: 130%;
+    font-size: 120%;
 }
 
 .rules-header {
-    padding: 2rem;
+    padding: 1rem;
     text-decoration: underline;
 }
 
 .close {
     margin: 2rem;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
 }
 
 .rules-image {
@@ -193,6 +193,10 @@ button:hover {
     .rules {
         height: 30px;
         width: 150px;
+        font-size: 100%;
+    }
+
+    .rules-content {
         font-size: 100%;
     }
 
