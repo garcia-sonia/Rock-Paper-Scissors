@@ -21,6 +21,16 @@ body {
     font-size: 300%;
 }
 
+.rps {
+    height: 50px;
+    width: 100px;
+}
+
+.parrot {
+    height:50px;
+    width:50px;
+}
+
 /* Game Controls */
 
 .game-controls {
