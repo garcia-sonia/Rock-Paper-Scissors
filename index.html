@@ -5,32 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
 
+    <meta name="description"
+    content="Rock, Paper, Scissors by the Sea: Have fun with this classic game while you try to defeat the mighty Redbeard. Make sure to read the game rules - First player to win 3 rounds wins the game and you can play as many games as you like!">
+<meta name="keywords"
+    content="Rock-Paper-Scissors, online game, free game, fun game for children.">
+<meta name="author" content="Sonia Garcia">
+
+    <!--Link to Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!--Link to Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Lato:wght@300&family=Oswald:wght@300&display=swap"
         rel="stylesheet">
 
+        <title>Rock, Paper, Scissors by the Sea</title>
 </head>
 
 <body>
 
+    <!--Header-->
     <div>
         <h1 id="main-header"><img src="assets/images/clipart4288829.png" height="50px" width="100px"> Rock Paper
             Scissors by the Sea <img src="assets/images/clipart91591.png" height="50px" width="50px"></h1>
     </div>
 
-
+    <!--Game Controls section-->
     <section class="game-controls">
-        <!-- Game Information Button for Pop Out Modal Box -->
+
+        <!--Button for pop out Modal box with game rules-->
         <button class="rules" aria-label="Click here to open box with game instructions">Game Rules
         </button>
 
+        <!--Game Rules Modal box-->
         <div class="rules-modal">
-            <!-- Game Info Pop Out Modal Box Content -->
             <div class="rules-content">
                 <h3 class="rules-header">How to Play:</h3>
                 <ul>
@@ -43,20 +54,20 @@
                 <button class="close">&#x58;</button>
             </div>
         </div>
-    
 
-    <div id="three-buttons">
-        <h2 class="header">Rock, Paper, Scissors....now You Show!</h2>
-        <button class = "choice" id="rock"></button>
-        <button class = "choice" id="paper"></button>
-        <button class = "choice" id="scissors"></button>
-    </div>
+        <!--Three buttons for choice of Rock, Paper, Scissors-->
+        <div id="three-buttons">
+            <h2 class="header">Rock, Paper, Scissors....now You Show!</h2>
+            <button class="choice" id="rock"></button>
+            <button class="choice" id="paper"></button>
+            <button class="choice" id="scissors"></button>
+        </div>
+    </section>
 
-</section>
-
-
-
+    <!--Game Status Section-->
     <section id="game-status">
+
+        <!--Current Round display-->
         <div id="current-game-container">
             <div id="current-game-display">
                 <h3>You pick: <span id="you-pick"></span></h3>
@@ -65,27 +76,38 @@
             </div>
         </div>
 
+        <!--Leaderboard display-->
         <div id="counter-container">
-           <!-- <h2 class="header"><img src="assets/images/kisspng-treasure-map-buried-treasure-treasure-island-pirate-map-5b188cbb0a45d6.3243221215283355470421.png" width="20px" height="20px"> Leaderboard</h2>-->
             <div id="counter-display">
-                <div class="counter-name"><img src="assets/images/st-michael-all-angels-12621.png" alt="clip art image of a group of children" width="100px" height="100px"><h3>Your score, matey!</h3></div>
-                <div class="counter-name"><img src="assets/images/free-pirate-clip-art-look-at-pirate-clip-art-clip-art-images-153912.png" alt="clip art image of a pirate with a red beard" width="80px" height="100px"><h3>Redbeard's score</h3></div>
-                <div class="counter-score"><span id = "user-score">0</span></div>
-                <div class="counter-score"><span id = "computer-score">0</span></div>
+                <div class="counter-name"><img src="assets/images/st-michael-all-angels-12621.png"
+                        alt="clip art image of a group of children" width="100px" height="100px">
+                    <h3>Your score, matey!</h3>
+                </div>
+                <div class="counter-name"><img
+                        src="assets/images/free-pirate-clip-art-look-at-pirate-clip-art-clip-art-images-153912.png"
+                        alt="clip art image of a pirate with a red beard" width="80px" height="100px">
+                    <h3>Redbeard's score</h3>
+                </div>
+                <div class="counter-score"><span id="user-score">0</span></div>
+                <div class="counter-score"><span id="computer-score">0</span></div>
             </div>
         </div>
         <div class="clear"></div>
     </section>
 
+    <!--End of game Modal box-->
     <div class="end-game-modal">
         <div class="winner-modal">
             <h3 class="end-modal-header">Announce Winner</h3>
             <p class="end-modal-content">Result display</p>
-            <img class="end-modal-image" src="assets/images/MaxPixel.net-Gold-Ship-Ocean-Pirate-Treasure-Pirate-Ship-3946618 (1).png" alt="png image of a pirate ship next to a treasure chest and a bottle with a map inside"><br>
+            <img class="end-modal-image"
+                src="assets/images/MaxPixel.net-Gold-Ship-Ocean-Pirate-Treasure-Pirate-Ship-3946618 (1).png"
+                alt="png image of a pirate ship next to a treasure chest and a bottle with a map inside"><br>
             <button class="again">Play again? &#128077;</button>
         </div>
     </div>
-    
+
+    <!--Link to JavaScript-->
     <script src="assets/js/script.js"></script>
 </body>
 
