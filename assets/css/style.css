@@ -57,6 +57,12 @@ button {
     color: #fff;
 }
 
+button:hover {
+    background-color: #fff;
+    color: rgb(255, 166, 0);
+    border-color: rgba(0, 0, 255, 0.884);
+}
+
 .game-controls {
     padding: 1rem;
     position: relative;
