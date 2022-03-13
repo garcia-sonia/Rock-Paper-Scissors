@@ -205,7 +205,19 @@ button {
         font-size: 150%;
     }
 
+    .modal-header {
+        padding: 1rem;
+        font-size: 140%;
+    }
 
+    .modal-content {
+        padding-top: 1rem;
+        font-size: 120%;
+    }
+
+    button {
+        font-size: 100%;
+    }
 }
 
 
