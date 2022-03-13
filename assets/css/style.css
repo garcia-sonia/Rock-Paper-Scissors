@@ -168,10 +168,39 @@ font-size: 200%;
 
 @media screen and (max-width:650px) {
 
+
+    #main-header {
+        font-size: 180%;
+        padding-bottom: 0;
+    }
+
+    .header {
+        font-size: 120%;
+    }
+
+    .rules {
+        height: 30px;
+        width: 150px;
+        font-size: 100%;
+    }
+
+    #current-game-container {
+        padding-bottom: 1rem;
+        font-size: smaller;
+    }
+
 #counter-display {
     width: 280px;
-    font-size: 100%;
 }
+
+.counter-name {
+    font-size: 80%;
+}
+
+.counter-score {
+font-size: 150%;
+}
+
 
 }
 
@@ -181,8 +210,8 @@ font-size: 200%;
 @media screen and (max-width:400px) {
 
     button {
-        height: 80px;
-        width: 80px;
+        height: 70px;
+        width: 70px;
     }
 
 }
