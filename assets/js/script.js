@@ -125,11 +125,11 @@ const modalText = document.getElementsByClassName('end-modal-content')[0];
 function modalWinner() {
     if (userScore === 3) {
         endModal.style.display = 'block';
-        modalHeader.textContent = 'Shiver me timbers! You\'ve defeated the mighty Redbeard!';
+        modalHeader.textContent = 'Shiver me timbers! ... You\'ve defeated the mighty Redbeard!';
         modalText.textContent = `Your score: ${userScore} / Redbeard's Score: ${computerScore}`;
     } else if (computerScore === 3) {
         endModal.style.display = 'block';
-        modalHeader.textContent = 'Redbeard wins, better luck next time!';
+        modalHeader.textContent = 'Redbeard wins, ... better luck next time!';
         modalText.textContent = `Your score: ${userScore} / Redbeard's Score: ${computerScore}`;
     }
 }

@@ -4,6 +4,8 @@
     font-family: 'Chelsea Market', cursive;
 }
 
+/* Website's Background image */
+
 body {
     background-image: url(../images/summer-5350229_1920.png);
     background-repeat: no-repeat;
@@ -11,40 +13,26 @@ body {
     background-position: center;
 }
 
+/* Header */
+
 #main-header {
     text-align: center;
     padding: 1rem;
     font-size: 300%;
 }
 
-/* The Game Rules Modal (content hidden by default) */
-.rules-modal,
-.end-game-modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 1rem;
-    left: 10%;
-    top: 10%;
-    width: 80%;
-    height: 80%;
-    background-color: rgb(110, 223, 223);
-    border-radius: 25px;
-    border-color: #fff;
-    border-style: solid;
+/* Game Controls */
+
+.game-controls {
+    padding: 1rem;
+    position: relative;
+    text-align: center;
 }
 
-#rock {
-    background-image: url(../images/rock-paper-scissors-296854.svg);
-}
-
-#paper {
-    background-image: url(../images/rock-paper-scissors-296855.svg);
-}
-
-#scissors {
-    background-image: url(../images/rock-paper-scissors-296853.svg);
-
+.rps-header {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 200%;
 }
 
 button {
@@ -63,36 +51,26 @@ button:hover {
     border-color: rgba(0, 0, 255, 0.884);
 }
 
-.game-controls {
-    padding: 1rem;
-    position: relative;
-    text-align: center;
-}
-
 .rules {
     height: 50px;
     width: 250px;
     margin-bottom: 1rem;
 }
 
-.rules-content {
-    font-size: 120%;
+#rock {
+    background-image: url(../images/rock-paper-scissors-296854.svg);
 }
 
-.rules-header {
-    padding: 1rem;
-    text-decoration: underline;
+#paper {
+    background-image: url(../images/rock-paper-scissors-296855.svg);
 }
 
-.close {
-    margin: 2rem;
-    height: 60px;
-    width: 60px;
+#scissors {
+    background-image: url(../images/rock-paper-scissors-296853.svg);
+
 }
 
-.rules-image {
-    padding: 2rem;
-}
+/* Game Status Section */
 
 #game-status {
     text-align: center;
@@ -104,7 +82,6 @@ button:hover {
     padding-bottom: 2rem;
 }
 
-
 #current-game-display {
     font-size: 120%;
 }
@@ -113,12 +90,6 @@ button:hover {
     text-align: center;
     font-family: 'Chelsea Market', cursive;
 
-}
-
-.header {
-    text-align: center;
-    padding-bottom: 1rem;
-    font-size: 200%;
 }
 
 #counter-display {
@@ -149,9 +120,46 @@ button:hover {
     clear: both;
 }
 
-/* winners modal */
+/* General Style for all Modals (content hidden by default) */
 
+.rules-modal,
+.end-game-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 1rem;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(110, 223, 223);
+    border-radius: 25px;
+    border-color: #fff;
+    border-style: solid;
+}
 
+/* Inside Game Rules Modal box */
+
+.rules-content {
+    font-size: 120%;
+}
+
+.rules-header {
+    padding: 1rem;
+    text-decoration: underline;
+}
+
+.rules-image {
+    padding: 2rem;
+}
+
+.close {
+    margin: 2rem;
+    height: 60px;
+    width: 60px;
+}
+
+/* Inside End of Game Modal box */
 
 .winner-modal {
     position: relative;
@@ -164,7 +172,7 @@ button:hover {
 }
 
 .end-modal-content {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
     padding: 1rem;
     font-size: 200%;
@@ -176,8 +184,7 @@ button:hover {
     height: 195px;
 }
 
-
-/* media queriers for screens 1000px wide and under */
+/* Media queries for screens 1000px wide and under */
 
 @media screen and (max-width:1000px) {
 
@@ -186,7 +193,7 @@ button:hover {
         padding-bottom: 0;
     }
 
-    .header {
+    .rps-header {
         font-size: 120%;
     }
 
@@ -219,32 +226,28 @@ button:hover {
 
     .end-modal-header {
         padding: 1rem;
-        font-size: 200%;
+        font-size: 170%;
     }
 
     .end-modal-content {
         padding-top: 1rem;
-        font-size: 150%;
-    }
-
-    .end-modal-image {
-        width: 200px;
-        height: 130px;
-    }
-
-    button {
-        font-size: 100%;
+        font-size: 120%;
     }
 }
 
 
-/* media queriers for screens 400px wide and under */
+/* Media queries for screens 400px wide and under */
 
 @media screen and (max-width:400px) {
 
     button {
         height: 70px;
         width: 70px;
+        font-size: 100%;
     }
 
+    .end-modal-image {
+        width: 200px;
+        height: 130px;
+    }
 }
