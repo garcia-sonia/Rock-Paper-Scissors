@@ -122,6 +122,16 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.8)
 }
 
+.five-mateys {
+    width: 100px;
+    height: 100px;
+}
+
+.redbeard {
+    width: 80px;
+    height: 100px;
+}
+
 .counter-score {
     font-size: 200%;
 }
@@ -161,6 +171,8 @@ button:hover {
 
 .rules-image {
     padding: 2rem;
+    width: 200px;
+    height: 220px;
 }
 
 .close {
