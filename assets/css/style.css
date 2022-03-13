@@ -18,7 +18,8 @@ body {
 }
 
 /* The Game Rules Modal (content hidden by default) */
-.rules-modal, .end-game-modal {
+.rules-modal,
+.end-game-modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -31,19 +32,19 @@ body {
     border-radius: 25px;
     border-color: #fff;
     border-style: solid;
-  }
+}
 
 #rock {
     background-image: url(../images/rock-paper-scissors-296854.svg);
-    }
+}
 
 #paper {
-background-image: url(../images/rock-paper-scissors-296855.svg);
+    background-image: url(../images/rock-paper-scissors-296855.svg);
 }
 
 #scissors {
     background-image: url(../images/rock-paper-scissors-296853.svg);
-    
+
 }
 
 button {
@@ -74,7 +75,8 @@ button {
 
 .rules-header {
     padding: 2rem;
-} 
+    text-decoration: underline;
+}
 
 .close {
     margin: 2rem;
@@ -98,13 +100,13 @@ button {
 
 
 #current-game-display {
-    font-size: 120%;  
+    font-size: 120%;
 }
 
 #counter-container {
     text-align: center;
     font-family: 'Chelsea Market', cursive;
-    
+
 }
 
 .header {
@@ -124,7 +126,8 @@ button {
     padding-bottom: 1rem;
 }
 
-.counter-name, .counter-score {
+.counter-name,
+.counter-score {
     border: 2px solid rgb(7, 7, 117);
     padding: 1rem;
     text-align: center;
@@ -135,6 +138,7 @@ button {
 .counter-score {
     font-size: 200%;
 }
+
 .clear {
     clear: both;
 }
@@ -149,25 +153,25 @@ button {
 }
 
 .modal-header {
-padding: 2rem;
-font-size: 200%;
+    padding: 2rem;
+    font-size: 200%;
 }
 
 .modal-content {
-margin-bottom: 2rem;
-text-align: center;
-padding: 1rem; 
-font-size: 200%;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 200%;
 }
 
 .modal-image {
     padding-bottom: 2rem;
 }
 
+
 /* media queriers for screens 1000px wide and under */
 
 @media screen and (max-width:1000px) {
-
 
     #main-header {
         font-size: 180%;
@@ -189,17 +193,17 @@ font-size: 200%;
         font-size: smaller;
     }
 
-#counter-display {
-    width: 280px;
-}
+    #counter-display {
+        width: 280px;
+    }
 
-.counter-name {
-    font-size: 80%;
-}
+    .counter-name {
+        font-size: 80%;
+    }
 
-.counter-score {
-font-size: 150%;
-}
+    .counter-score {
+        font-size: 150%;
+    }
 
 
 }
