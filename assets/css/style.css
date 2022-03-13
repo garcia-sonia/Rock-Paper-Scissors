@@ -68,15 +68,15 @@ button:hover {
 }
 
 #rock {
-    background-image: url(../images/rock-paper-scissors-296854.svg);
+    background-image: url(../images/rock.svg);
 }
 
 #paper {
-    background-image: url(../images/rock-paper-scissors-296855.svg);
+    background-image: url(../images/paper.svg);
 }
 
 #scissors {
-    background-image: url(../images/rock-paper-scissors-296853.svg);
+    background-image: url(../images/scissors.svg);
 
 }
 
