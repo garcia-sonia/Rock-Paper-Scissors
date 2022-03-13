@@ -164,9 +164,9 @@ font-size: 200%;
     padding-bottom: 2rem;
 }
 
-/* media queriers for screens 650px wide and under */
+/* media queriers for screens 1000px wide and under */
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:1000px) {
 
 
     #main-header {
