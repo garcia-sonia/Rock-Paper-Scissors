@@ -170,7 +170,7 @@ button:hover {
 }
 
 .rules-image {
-    padding: 2rem;
+    padding: 1rem;
     width: 200px;
     height: 220px;
 }
@@ -271,5 +271,9 @@ button:hover {
     .end-modal-image {
         width: 200px;
         height: 130px;
+    }
+
+    .close {
+        margin: 1rem;
     }
 }
