@@ -261,19 +261,23 @@ button:hover {
     }
 }
 
+/* Media queries for screens 500px wide and under */
 
-/* Media queries for screens 400px wide and under */
-
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
 
     button {
         height: 70px;
         width: 70px;
         font-size: 100%;
     }
+}
 
-    .end-modal-image {
-        width: 200px;
-        height: 130px;
-    }
+/* Media queries for screens 400px wide and under */
+
+@media screen and (max-width:400px) {
+
+.end-modal-image {
+    width: 200px;
+    height: 130px;
+}
 }
