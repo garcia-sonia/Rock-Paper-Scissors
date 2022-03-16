@@ -276,6 +276,7 @@ button:hover {
 
     #main-header {
         font-size: 120%;
+        padding-bottom: 0%;
     }
 
     .rps {
@@ -299,14 +300,19 @@ button:hover {
     }
 
     button {
-        height: 70px;
-        width: 70px;
-        font-size: 100%;
+        height: 60px;
+        width: 60px;
+        font-size: 80%;
     }
 
     #current-game-display {
         font-size: 100%;
     }
+
+
+.counter-name, .counter-score {
+    padding: 0.5%;
+}
 
     .counter-name {
         font-size: 60%;
