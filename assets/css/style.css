@@ -294,14 +294,14 @@ button:hover {
     }
 
     .rules {
-        height: 20px;
+        height: 22px;
         width: 120px;
-        font-size: 90%;
+        font-size: 80%;
     }
 
     button {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
         font-size: 80%;
     }
 
