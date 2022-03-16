@@ -27,8 +27,8 @@ body {
 }
 
 .parrot {
-    height:50px;
-    width:50px;
+    height: 50px;
+    width: 50px;
 }
 
 /* Game Controls */
@@ -216,7 +216,16 @@ button:hover {
 
     #main-header {
         font-size: 180%;
-        padding-bottom: 0;
+    }
+
+    .rps {
+        height: 40px;
+        width: 80px;
+    }
+
+    .parrot {
+        height: 40px;
+        width: 40px;
     }
 
     .rps-header {
@@ -265,19 +274,66 @@ button:hover {
 
 @media screen and (max-width:500px) {
 
+    #main-header {
+        font-size: 120%;
+    }
+
+    .rps {
+        height: 25px;
+        width: 50px;
+    }
+
+    .parrot {
+        height: 25px;
+        width: 25px;
+    }
+
+    .rps-header {
+        font-size: 100%;
+    }
+
+    .rules {
+        height: 20px;
+        width: 120px;
+        font-size: 90%;
+    }
+
     button {
         height: 70px;
         width: 70px;
         font-size: 100%;
     }
-}
 
-/* Media queries for screens 400px wide and under */
+    #current-game-display {
+        font-size: 100%;
+    }
 
-@media screen and (max-width:400px) {
+    .counter-name {
+        font-size: 60%;
+    }
 
-.end-modal-image {
-    width: 200px;
-    height: 130px;
-}
+    .counter-score {
+        font-size: 100%;
+    }
+
+    .end-modal-image {
+        width: 200px;
+        height: 130px;
+    }
+
+    .rules-modal,
+.end-game-modal {
+    padding: 0}
+
+    .rules-content {
+        font-size: 80%;
+    }
+
+    .end-modal-header {
+        font-size: 120%;
+    }
+
+    .end-modal-content {
+        font-size: 100%;
+    }
 }
