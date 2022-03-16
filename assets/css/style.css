@@ -302,7 +302,7 @@ button:hover {
     button {
         height: 50px;
         width: 50px;
-        font-size: 80%;
+        font-size: 70%;
     }
 
     #current-game-display {
@@ -311,7 +311,7 @@ button:hover {
 
 
 .counter-name, .counter-score {
-    padding: 0.5%;
+    padding: 0.4rem;
 }
 
     .counter-name {
@@ -322,14 +322,20 @@ button:hover {
         font-size: 100%;
     }
 
+    .five-mateys {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .redbeard {
+        width: 64px;
+        height: 80px;
+    }
+
     .end-modal-image {
         width: 200px;
         height: 130px;
     }
-
-    .rules-modal,
-.end-game-modal {
-    padding: 0}
 
     .rules-content {
         font-size: 80%;
