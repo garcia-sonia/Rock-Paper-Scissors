@@ -234,7 +234,7 @@ button:hover {
 
     .rules {
         height: 30px;
-        width: 150px;
+        width: 120px;
         font-size: 100%;
     }
 
@@ -243,9 +243,9 @@ button:hover {
     }
 
     button {
-        height: 70px;
-        width: 70px;
-        font-size: 90%;
+        height: 60px;
+        width: 60px;
+        font-size: 85%;
     }
 
     #current-game-container {
