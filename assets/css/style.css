@@ -270,9 +270,9 @@ button:hover {
     }
 }
 
-/* Media queries for screens 500px wide and under */
+/* Media queries for screens 400px wide and under */
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:400px) {
 
     #main-header {
         font-size: 120%;
@@ -290,7 +290,8 @@ button:hover {
     }
 
     .rps-header {
-        font-size: 100%;
+        font-size: 95%;
+        padding-bottom: 0.5rem;
     }
 
     .rules {
@@ -306,7 +307,7 @@ button:hover {
     }
 
     #current-game-display {
-        font-size: 100%;
+        font-size: 95%;
     }
 
 
