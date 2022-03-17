@@ -18,7 +18,7 @@ body {
 #main-header {
     text-align: center;
     padding: 1rem;
-    font-size: 300%;
+    font-size: 250%;
 }
 
 .rps {
@@ -62,8 +62,8 @@ button:hover {
 }
 
 .rules {
-    height: 50px;
-    width: 250px;
+    height: 40px;
+    width: 180px;
     margin-bottom: 1rem;
 }
 
