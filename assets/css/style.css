@@ -14,10 +14,11 @@ body {
 }
 
 /* Header */
-
+#main-header-wrap {
+    padding: 0.5rem;
+}
 #main-header {
     text-align: center;
-    padding: 1rem;
     font-size: 250%;
 }
 
@@ -46,11 +47,11 @@ body {
 }
 
 button {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     border-radius: 25px;
     border-color: rgb(255, 166, 0);
-    font-size: 150%;
+    font-size: 120%;
     background-color: rgba(0, 0, 255, 0.884);
     color: #fff;
 }
@@ -89,7 +90,7 @@ button:hover {
 
 #current-game-container {
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 #current-game-display {
