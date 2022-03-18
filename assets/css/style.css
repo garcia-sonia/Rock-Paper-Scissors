@@ -282,7 +282,7 @@ button:hover {
 
     #main-header {
         font-size: 120%;
-        padding-bottom: 0%;
+        padding-bottom: 0.5rem;
     }
 
     .rps {
@@ -302,8 +302,9 @@ button:hover {
 
     .rules {
         height: 22px;
-        width: 120px;
+        width: 100px;
         font-size: 80%;
+        margin-bottom: 0.5rem;
     }
 
     button {
