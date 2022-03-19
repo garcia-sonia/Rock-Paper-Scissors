@@ -15,8 +15,9 @@ body {
 
 /* Header */
 #main-header-wrap {
-    padding: 0.5rem;
+    padding: 2rem;
 }
+
 #main-header {
     text-align: center;
     font-size: 250%;
@@ -211,6 +212,16 @@ button:hover {
     height: 195px;
 }
 
+/* Media queries for screens 1600px wide and under */
+
+@media screen and (max-width:1600px) {
+
+#main-header-wrap {
+    padding: 0.5rem;
+}
+
+}
+
 /* Media queries for screens 600px wide and under */
 
 @media screen and (max-width:600px) {
@@ -306,6 +317,10 @@ button:hover {
         width: 100px;
         font-size: 80%;
         margin-bottom: 0.5rem;
+    }
+
+    .game-controls {
+        padding: 0.5rem;
     }
 
     button {
