@@ -15,7 +15,7 @@ body {
 
 /* Header */
 #main-header-wrap {
-    padding: 2rem;
+    padding: 0.5rem;
 }
 
 #main-header {
@@ -210,16 +210,6 @@ button:hover {
     padding-bottom: 2rem;
     width: 300px;
     height: 195px;
-}
-
-/* Media queries for screens 1600px wide and under */
-
-@media screen and (max-width:1600px) {
-
-#main-header-wrap {
-    padding: 0.5rem;
-}
-
 }
 
 /* Media queries for screens 600px wide and under */
