@@ -9,7 +9,7 @@
 body {
     background-image: url(../images/background_beach_cropped.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: cover;
     background-position: center;
 }
 
