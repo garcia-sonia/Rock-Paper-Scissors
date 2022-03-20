@@ -7,9 +7,9 @@
 /* Website's Background image */
 
 body {
-    background-image: url(../images/background_beach_cropped.png);
+    background-image: url(../images/background_beach_1920x1166.png);
     background-repeat: no-repeat;
-    background-attachment: cover;
+    background-attachment: fixed;
     background-position: center;
 }
 
