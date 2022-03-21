@@ -1,15 +1,15 @@
+//Declare game variables
 const computerPicksShow = document.getElementById('computer-picks');
 const youPickShow = document.getElementById('you-pick');
 const whoWinsShow = document.getElementById('who-wins');
 const differentChoices = document.getElementsByClassName('choice');
 
-
 let youPick;
 let computerPicks;
 let result;
 
-let scoreHTML = document.getElementById('user-score')[0];
-let computerHTML = document.getElementById('computer-score')[0];
+let userScoreHTML = document.getElementById('user-score')[0];
+let computerScoreHTML = document.getElementById('computer-score')[0];
 let userScore = 0;
 let computerScore = 0;
 
@@ -22,8 +22,7 @@ Array.from(differentChoices).forEach(differentChoice => differentChoice.addEvent
 }))
 
 function generateComputerPicks() {
-    const anyNumber = Math.floor(Math.random() * differentChoices.length) +1;
-
+    const anyNumber = Math.floor(Math.random() * differentChoices.length) + 1;
     const choices = ['rock', 'paper', 'scissors'];
     computerPicks = choices[anyNumber] || 'rock';
     computerPicksShow.innerHTML = computerPicks;
@@ -38,32 +37,32 @@ function calculateResult() {
 
     if (computerPicks === 'rock' && youPick === 'scissors') {
         result = 'You lose! &#128531;'
-        lose(computerHTML);
+        lose(computerScoreHTML);
     }
 
     if (computerPicks === 'rock' && youPick === 'paper') {
         result = 'You win! &#128515'
-        win(scoreHTML);
+        win(userScoreHTML);
     }
 
     if (computerPicks === 'paper' && youPick === 'scissors') {
         result = 'You win! &#128515'
-        win(scoreHTML);
+        win(userScoreHTML);
     }
 
     if (computerPicks === 'paper' && youPick === 'rock') {
         result = 'You lose! &#128531;'
-        lose(computerHTML);
+        lose(computerScoreHTML);
     }
 
     if (computerPicks === 'scissors' && youPick === 'rock') {
         result = 'You win! &#128515'
-        win(scoreHTML);
+        win(userScoreHTML);
     }
 
     if (computerPicks === 'scissors' && youPick === 'paper') {
         result = 'You lose! &#128531;'
-        lose(computerHTML);
+        lose(computerScoreHTML);
     }
 
     whoWinsShow.innerHTML = result
@@ -85,20 +84,20 @@ let computerScoreShow = document.getElementById('computer-score');
 
 
 /* Set up a button to open (on click) modal box with instructions on how to play the rock, paper, scissors game */
-    //Declare About Button Variables - Game Instructions Pop Out (Modal) Box
-    const rulesBox = document.getElementsByClassName('rules-modal')[0];
-    const rulesButton = document.getElementsByClassName('rules')[0];
-    const closeSpan = document.getElementsByClassName('close')[0];
+//Declare About Button Variables - Game Instructions Pop Out (Modal) Box
+const rulesBox = document.getElementsByClassName('rules-modal')[0];
+const rulesButton = document.getElementsByClassName('rules')[0];
+const closeSpan = document.getElementsByClassName('close')[0];
 
-    // When user clicks the Game Rules Button, modal box with rules opens 
-    rulesButton.addEventListener('click', () => {
-        rulesBox.style.display = 'block';  
-    });
+// When user clicks the Game Rules Button, modal box with rules opens 
+rulesButton.addEventListener('click', () => {
+    rulesBox.style.display = 'block';
+});
 
-    // When user clicks on (x), rules modal closes
-    closeSpan.addEventListener('click', () => {
-        rulesBox.style.display = 'none';
-    });
+// When user clicks on (x), rules modal closes
+closeSpan.addEventListener('click', () => {
+    rulesBox.style.display = 'none';
+});
 
 
 
@@ -139,24 +138,24 @@ function modalWinner() {
  * Setting up the Play again function.
  */
 
- const againButton = document.getElementsByClassName('again')[0];
+const againButton = document.getElementsByClassName('again')[0];
 
- againButton.addEventListener('click', () => {
+againButton.addEventListener('click', () => {
     closeModal(endModal);
 });
 
- function closeModal() {
+function closeModal() {
     endModal.style.display = 'none';
-    newGame(scoreHTML, computerHTML);
+    newGame(userScoreHTML, computerScoreHTML);
 }
 
 function newGame() {
     userScore = 0;
     computerScore = 0;
-document.getElementsByClassName('again');
-whoWinsShow.innerHTML = '';
-youPickShow.innerHTML = '';
-computerPicksShow.innerHTML = '';
-userScoreShow.innerHTML = 0;
-computerScoreShow.innerHTML = 0;
+    document.getElementsByClassName('again');
+    whoWinsShow.innerHTML = '';
+    youPickShow.innerHTML = '';
+    computerPicksShow.innerHTML = '';
+    userScoreShow.innerHTML = 0;
+    computerScoreShow.innerHTML = 0;
 }
