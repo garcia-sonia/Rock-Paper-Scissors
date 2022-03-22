@@ -26,7 +26,7 @@ differentChoices.forEach(differentChoice => differentChoice.addEventListener('cl
     youPickShow.innerHTML = youPick;
     generateComputerPicks();
     calculateResult();
-}))
+}));
 
 //Create function to generate computer choice with Math.random().
 function generateComputerPicks() {
@@ -42,40 +42,40 @@ function generateComputerPicks() {
 function calculateResult() {
 
     if (computerPicks === youPick) {
-        result = 'It\'s a draw! &#128580;'
+        result = 'It\'s a draw! &#128580;';
     }
 
     if (computerPicks === 'rock' && youPick === 'scissors') {
-        result = 'You lose! &#128531;'
+        result = 'You lose! &#128531;';
         lose(computerScoreHTML);
     }
 
     if (computerPicks === 'rock' && youPick === 'paper') {
-        result = 'You win! &#128515'
+        result = 'You win! &#128515';
         win(userScoreHTML);
     }
 
     if (computerPicks === 'paper' && youPick === 'scissors') {
-        result = 'You win! &#128515'
+        result = 'You win! &#128515';
         win(userScoreHTML);
     }
 
     if (computerPicks === 'paper' && youPick === 'rock') {
-        result = 'You lose! &#128531;'
+        result = 'You lose! &#128531;';
         lose(computerScoreHTML);
     }
 
     if (computerPicks === 'scissors' && youPick === 'rock') {
-        result = 'You win! &#128515'
+        result = 'You win! &#128515';
         win(userScoreHTML);
     }
 
     if (computerPicks === 'scissors' && youPick === 'paper') {
-        result = 'You lose! &#128531;'
+        result = 'You lose! &#128531;';
         lose(computerScoreHTML);
     }
 
-    whoWinsShow.innerHTML = result
+    whoWinsShow.innerHTML = result;
 }
 
 //Create function to increment user's score on leaderboard if user wins round.
