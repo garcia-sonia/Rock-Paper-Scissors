@@ -17,6 +17,8 @@ let computerScoreHTML = document.getElementById('computer-score')[0];
 let userScore = 0;
 let computerScore = 0;
 
+/*Setting up Result for each round feature*/
+
 //Add event listener to buttons on click for each choice of rock, paper or scissors from user.
 //Display user's choice for each round (innerHTML) 
 //Generate computer's choice with generateComputerPicks() function.
@@ -78,21 +80,24 @@ function calculateResult() {
     whoWinsShow.innerHTML = result;
 }
 
+/*Setting up Leaderboard feature*/
+
 //Create function to increment user's score on leaderboard if user wins round.
-//Then show end of game modal (with Winner text) if user reaches a total score of three.
+//Show end of game modal (with Winner text) if user reaches a total score of three.
 function win() {
     userScoreShow.innerHTML = ++userScore;
     modalWinner();
 }
 
 //Create function to increment computer's score on leaderboard if user loses round.
-//Then show end of game modal (with Loser text) if computer reaches a total score of three.
+//Show end of game modal (with Loser text) if computer reaches a total score of three.
 function lose() {
     computerScoreShow.innerHTML = ++computerScore;
     modalWinner();
 }
 
-//Set up buttons to open and close (on click) modal box with Game Rules.
+/*Setting up the Game Rules Modal feature*/
+
 //Declare Game Rules modal variables:
 const rulesBox = document.getElementsByClassName('rules-modal')[0];
 const rulesButton = document.getElementsByClassName('rules')[0];
@@ -108,12 +113,14 @@ closeSpan.addEventListener('click', () => {
     rulesBox.style.display = 'none';
 });
 
-//Announce winner using an end of game modal box (When a player reaches a total score of three, the game ends and the winner is declared).
+/*Setting up the End of Game Modal feature*/
+
 //Declare end of game modal variables:
 const endModal = document.getElementsByClassName('end-game-modal')[0];
 const modalHeader = document.getElementsByClassName('end-modal-header')[0];
 const modalText = document.getElementsByClassName('end-modal-content')[0];
 
+//Create function to declare winner when user or computer reaches a total score of 3.
 function modalWinner() {
     if (userScore === 3) {
         endModal.style.display = 'block';
@@ -126,10 +133,7 @@ function modalWinner() {
     }
 }
 
-
-/**
- * Setting up the Play again function.
- */
+/*Setting up the Play again feature*/
 
 const againButton = document.getElementsByClassName('again')[0];
 
