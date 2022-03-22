@@ -2,7 +2,7 @@
 const computerPicksShow = document.getElementById('computer-picks');
 const youPickShow = document.getElementById('you-pick');
 const whoWinsShow = document.getElementById('who-wins');
-const differentChoices = document.getElementsByClassName('choice');
+const differentChoices = document.querySelectorAll('button');
 
 let youPick;
 let computerPicks;
@@ -17,11 +17,11 @@ let computerScoreHTML = document.getElementById('computer-score')[0];
 let userScore = 0;
 let computerScore = 0;
 
-//Add event listener on click for each choice of rock, paper or scissors from user.
+//Add event listener to buttons on click for each choice of rock, paper or scissors from user.
 //Display user's choice for each round (innerHTML) 
-//Genearate computer's choice with generateComputerPicks() function.
+//Generate computer's choice with generateComputerPicks() function.
 //Finally calculate result for each round with calculateResult() function.
-Array.from(differentChoices).forEach(differentChoice => differentChoice.addEventListener('click', (e) => {
+differentChoices.forEach(differentChoice => differentChoice.addEventListener('click', (e) => {
     youPick = e.target.id;
     youPickShow.innerHTML = youPick;
     generateComputerPicks();
