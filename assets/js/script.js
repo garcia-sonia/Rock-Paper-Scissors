@@ -2,7 +2,7 @@
 const computerPicksShow = document.getElementById('computer-picks');
 const youPickShow = document.getElementById('you-pick');
 const whoWinsShow = document.getElementById('who-wins');
-const differentChoices = document.querySelectorAll('button');
+const differentChoices = document.querySelectorAll('.choice');
 
 let youPick;
 let computerPicks;
