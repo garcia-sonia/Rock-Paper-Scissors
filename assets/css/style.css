@@ -24,13 +24,13 @@ body {
 }
 
 .rps {
-    height: 50px;
-    width: 100px;
+    width: 78px;
+    height: 50px; 
 }
 
 .parrot {
+    width: 53px;
     height: 50px;
-    width: 50px;
 }
 
 /* Game Controls */
@@ -177,7 +177,7 @@ button:hover {
 
 .rules-image {
     padding: 1rem;
-    width: 200px;
+    width: 235px;
     height: 220px;
 }
 
@@ -221,13 +221,13 @@ button:hover {
     }
 
     .rps {
-        height: 40px;
-        width: 80px;
+        width: 62px;
+        height: 40px;  
     }
 
     .parrot {
+        width: 42px;
         height: 40px;
-        width: 40px;
     }
 
     .rps-header {
@@ -299,13 +299,13 @@ button:hover {
     }
 
     .rps {
-        height: 25px;
-        width: 50px;
+        width: 39px;
+        height: 25px;  
     }
 
     .parrot {
+        width: 26px;
         height: 25px;
-        width: 25px;
     }
 
     .rps-header {
