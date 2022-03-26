@@ -46,10 +46,13 @@ https://www.w3schools.com/js/js_if_else.asp
 How TO - CSS/JS Modal
 https://www.w3schools.com/howto/howto_css_modals.asp
 
-Finally, I used the following reference by Scott Grannneman for help with centering a table with CSS:
+Finally, I used the following references to help fix some of the bugs described in previous sections:
 
-Center a table with CSS
+Center a table with CSS by Scott Grannneman
 https://granneman.com/webdev/coding/css/centertables
+
+aria-label by Aditus
+https://www.aditus.io/aria/aria-label/
 
 ## Content Inspiration
 
