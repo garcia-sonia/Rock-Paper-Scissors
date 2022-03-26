@@ -33,8 +33,19 @@ differentChoices.forEach(differentChoice => differentChoice.addEventListener('cl
 //Create function to generate computer choice with Math.random().
 function generateComputerPicks() {
     const anyNumber = Math.floor(Math.random() * differentChoices.length) + 1;
-    const choices = ['rock', 'paper', 'scissors'];
-    computerPicks = choices[anyNumber] || 'rock';
+
+    if (anyNumber === 1) {
+        computerPicks = 'rock'
+    }
+
+    if (anyNumber === 2) {
+        computerPicks = 'paper'
+    }
+
+    if (anyNumber === 3) {
+        computerPicks = 'scissors'
+    }
+
     computerPicksShow.innerHTML = computerPicks;
 }
 
