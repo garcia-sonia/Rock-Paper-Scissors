@@ -1,5 +1,7 @@
 //Declare game variables
+const computerScoreShow = document.getElementById('computer-score');
 const computerPicksShow = document.getElementById('computer-picks');
+const userScoreShow = document.getElementById('user-score');
 const youPickShow = document.getElementById('you-pick');
 const whoWinsShow = document.getElementById('who-wins');
 const differentChoices = document.querySelectorAll('.choice');
@@ -7,9 +9,6 @@ const differentChoices = document.querySelectorAll('.choice');
 let youPick;
 let computerPicks;
 let result;
-
-let userScoreShow = document.getElementById('user-score');
-let computerScoreShow = document.getElementById('computer-score');
 
 //Default score values are set to 0 and incremented after each round until one of the players wins three rounds
 let userScoreHTML = document.getElementById('user-score')[0];
