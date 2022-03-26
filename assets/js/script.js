@@ -29,7 +29,10 @@ differentChoices.forEach(differentChoice => differentChoice.addEventListener('cl
     calculateResult();
 }));
 
-//Create function to generate computer choice with Math.random().
+/**
+ * Create function to generate computer choice with Math.random().
+ */
+
 function generateComputerPicks() {
     const anyNumber = Math.floor(Math.random() * differentChoices.length) + 1;
 
@@ -48,9 +51,12 @@ function generateComputerPicks() {
     computerPicksShow.innerHTML = computerPicks;
 }
 
-//Create function to calculate result for each round taking every possible combination into account.
-//Display result (It's a draw, You lose! or You win!)
-//Apply lose() or win() function to increment scores on leaderboard depending on whether user/computer loses or wins.
+/**
+ * Create function to calculate result for each round taking every possible combination into account.
+ * Display result (It's a draw, You lose! or You win!)
+ * Apply lose() or win() function to increment scores on leaderboard depending on whether user/computer loses or wins.
+ */
+
 function calculateResult() {
 
     if (computerPicks === youPick) {
@@ -92,15 +98,21 @@ function calculateResult() {
 
 /*Setting up Leaderboard feature*/
 
-//Create function to increment user's score on leaderboard if user wins round.
-//Show end of game modal (with Winner text) if user reaches a total score of three.
+/**
+ * Create function to increment user's score on leaderboard if user wins round.
+ * Show end of game modal (with Winner text) if user reaches a total score of three.
+ */
+
 function win() {
     userScoreShow.innerHTML = ++userScore;
     modalWinner();
 }
 
-//Create function to increment computer's score on leaderboard if user loses round.
-//Show end of game modal (with Loser text) if computer reaches a total score of three.
+/**
+ * Create function to increment computer's score on leaderboard if user loses round.
+ * Show end of game modal (with Loser text) if computer reaches a total score of three.
+ */
+
 function lose() {
     computerScoreShow.innerHTML = ++computerScore;
     modalWinner();
@@ -130,7 +142,10 @@ const endModal = document.getElementsByClassName('end-game-modal')[0];
 const modalHeader = document.getElementsByClassName('end-modal-header')[0];
 const modalText = document.getElementsByClassName('end-modal-content')[0];
 
-//Create function to declare winner when user or computer reaches a total score of 3.
+/**
+ * Create function to declare winner when user or computer reaches a total score of 3.
+ */
+
 function modalWinner() {
     if (userScore === 3) {
         endModal.style.display = 'block';
@@ -145,16 +160,26 @@ function modalWinner() {
 
 /*Setting up the Play again feature*/
 
+//Declare again variable:
 const againButton = document.getElementsByClassName('again')[0];
 
+//Add Event listener to again button on clik and close end of game modal.
 againButton.addEventListener('click', () => {
     closeModal(endModal);
 });
+
+/**
+ * Create function to close end of game modal.
+ */
 
 function closeModal() {
     endModal.style.display = 'none';
     newGame(userScoreHTML, computerScoreHTML);
 }
+
+/**
+ * Create function to start new game.
+ */
 
 function newGame() {
     userScore = 0;
