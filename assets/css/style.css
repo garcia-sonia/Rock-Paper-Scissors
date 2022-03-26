@@ -52,15 +52,21 @@ button {
     width: 80px;
     border-radius: 25px;
     border-color: rgb(255, 166, 0);
+}
+
+button:hover {
+    border-color: rgba(0, 0, 255, 0.884);
+}
+
+.rules, .close, .again {
     font-size: 110%;
     background-color: rgba(0, 0, 255, 0.884);
     color: #fff;
 }
 
-button:hover {
+.rules:hover, .close:hover, .again:hover {
     background-color: #fff;
     color: rgb(255, 166, 0);
-    border-color: rgba(0, 0, 255, 0.884);
 }
 
 .rules {
@@ -234,10 +240,13 @@ button:hover {
         font-size: 120%;
     }
 
+    .rules, .close {
+        font-size: 100%;
+    }
+
     .rules {
         height: 30px;
         width: 120px;
-        font-size: 100%;
     }
 
     .rules-header {
@@ -251,14 +260,16 @@ button:hover {
     button {
         height: 60px;
         width: 60px;
-        font-size: 85%;
     }
 
     .close {
-        font-size: 100%;
         margin: 0.5rem;
         height: 30px;
         width: 30px;
+    }
+
+    .again {
+        font-size: 85%;
     }
 
     #current-game-container {
@@ -327,7 +338,6 @@ button:hover {
     button {
         height: 50px;
         width: 50px;
-        font-size: 70%;
     }
 
     #current-game-container {
@@ -376,5 +386,9 @@ button:hover {
 
     .end-modal-content {
         font-size: 100%;
+    }
+
+    .again {
+        font-size: 70%;
     }
 }
