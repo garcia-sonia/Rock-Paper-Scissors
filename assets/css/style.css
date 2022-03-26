@@ -24,12 +24,12 @@ body {
 }
 
 .rps {
-    width: 78px;
+    width: auto;
     height: 50px; 
 }
 
 .parrot {
-    width: 53px;
+    width: auto;
     height: 50px;
 }
 
@@ -107,7 +107,6 @@ button:hover {
 #counter-container {
     text-align: center;
     font-family: 'Chelsea Market', cursive;
-
 }
 
 #counter-display {
@@ -131,12 +130,12 @@ button:hover {
 }
 
 .five-mateys {
-    width: 100px;
+    width: auto;
     height: 100px;
 }
 
 .redbeard {
-    width: 80px;
+    width: auto;
     height: 100px;
 }
 
@@ -183,7 +182,7 @@ button:hover {
 
 .rules-image {
     padding: 1rem;
-    width: 235px;
+    width: auto;
     height: 220px;
 }
 
@@ -214,7 +213,7 @@ button:hover {
 
 .end-modal-image {
     padding-bottom: 2rem;
-    width: 300px;
+    width: auto;
     height: 195px;
 }
 
@@ -227,12 +226,12 @@ button:hover {
     }
 
     .rps {
-        width: 62px;
+        width: auto;
         height: 40px;  
     }
 
     .parrot {
-        width: 42px;
+        width: auto;
         height: 40px;
     }
 
@@ -310,12 +309,12 @@ button:hover {
     }
 
     .rps {
-        width: 39px;
+        width: auto;
         height: 25px;  
     }
 
     .parrot {
-        width: 26px;
+        width: auto;
         height: 25px;
     }
 
@@ -362,17 +361,17 @@ button:hover {
     }
 
     .five-mateys {
-        width: 80px;
+        width: auto;
         height: 80px;
     }
 
     .redbeard {
-        width: 64px;
+        width: auto;
         height: 80px;
     }
 
     .end-modal-image {
-        width: 200px;
+        width: auto;
         height: 130px;
     }
 
