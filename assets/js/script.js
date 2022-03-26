@@ -16,7 +16,7 @@ let computerScoreHTML = document.getElementById('computer-score')[0];
 let userScore = 0;
 let computerScore = 0;
 
-/*Setting up Result for each round feature*/
+/*Feature: Setting up Result for each round*/
 
 //Add event listener to buttons on click for each choice of rock, paper or scissors from user.
 //Display user's choice for each round (innerHTML) 
@@ -37,15 +37,15 @@ function generateComputerPicks() {
     const anyNumber = Math.floor(Math.random() * differentChoices.length) + 1;
 
     if (anyNumber === 1) {
-        computerPicks = 'rock'
+        computerPicks = 'rock';
     }
 
     if (anyNumber === 2) {
-        computerPicks = 'paper'
+        computerPicks = 'paper';
     }
 
     if (anyNumber === 3) {
-        computerPicks = 'scissors'
+        computerPicks = 'scissors';
     }
 
     computerPicksShow.innerHTML = computerPicks;
@@ -96,7 +96,7 @@ function calculateResult() {
     whoWinsShow.innerHTML = result;
 }
 
-/*Setting up Leaderboard feature*/
+/*Feature: Setting up the Leaderboard*/
 
 /**
  * Create function to increment user's score on leaderboard if user wins round.
@@ -118,7 +118,7 @@ function lose() {
     modalWinner();
 }
 
-/*Setting up the Game Rules Modal feature*/
+/*Feature: Setting up the Game Rules Modal*/
 
 //Declare Game Rules modal variables:
 const rulesBox = document.getElementsByClassName('rules-modal')[0];
@@ -135,7 +135,7 @@ closeSpan.addEventListener('click', () => {
     rulesBox.style.display = 'none';
 });
 
-/*Setting up the End of Game Modal feature*/
+/*Feature: Setting up the End of Game Modal*/
 
 //Declare end of game modal variables:
 const endModal = document.getElementsByClassName('end-game-modal')[0];
@@ -158,7 +158,7 @@ function modalWinner() {
     }
 }
 
-/*Setting up the Play again feature*/
+/*Feature: Setting up the Play again feature*/
 
 //Declare again variable:
 const againButton = document.getElementsByClassName('again')[0];
