@@ -330,6 +330,11 @@ button:hover {
         margin-top: 0;
     }
 
+    .rules-image {
+        width: auto;
+        height: 100px;
+    }
+
     .game-controls {
         padding: 0.4rem;
     }
@@ -372,7 +377,7 @@ button:hover {
 
     .end-modal-image {
         width: auto;
-        height: 130px;
+        height: 100px;
     }
 
     .rules-content {
