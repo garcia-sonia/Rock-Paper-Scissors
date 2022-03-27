@@ -1,7 +1,34 @@
 # Rock Paper Scissors by the Sea
-
+All in one page, 
+choice of font
+choice of png
+for children
+instructions
+end of modal
+round counter and leader board
+recap rules
+recap end of game modal
+again button
+close button in the other modal
+written in friendly tone with pirates vocabulary
+also no scrolling 
+emojis for children
+child friendly
+incitar with now you show
 ## Features
-    Features left to implement
+### Background
+### Main header
+### Game rules button
+### Choice buttons: Rock, Paper, Scissors
+also talk about header now you show
+### Round result
+talk about smileys and 3 different outcomes
+### Leaderboard
+### Game Rules modal
+including close button
+### End of game modal
+including play again button
+### Features left to implement
 
 ## Testing 
 - I used Edge, Chrome and Firefox desktop browsers to ensure cross-compatibility.
@@ -31,7 +58,7 @@
    - Issue: At first the CSS grid table used for the leaderboard wasn't centered.
    - Fix: I used the article by Scott Grannneman referenced below where he recommends to center a table by setting the margins, like this:  
 
-   ![Image showing how to center a table in css](docs/images/doc_centre_table.PNG])
+   ![Image showing how to center a table in css](docs/images/doc_centre_table.PNG)
 
 6. Intended outcome: Correct width/hight ratio for all png images. 
    - Issue: When adapting size of png images to better fit different screen sizes, I accidentally altered some of the aspect ratios causing the images to look slightly distorted.
