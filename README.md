@@ -1,16 +1,16 @@
-Rock Paper Scissors by the Sea
+# Rock Paper Scissors by the Sea
 
-Features
+## Features
     Features left to implement
 
-# Testing 
+## Testing 
 - I used Edge, Chrome and Firefox desktop browsers to ensure cross-compatibility.
 - I used DevTools to simulate different smaller screen sizes down to 320px in width as well as testing on several personal devices including Android tablets and mobile phones.
 - I asked my mentor and friends and relatives to test the website on Opera and iOS and no errors were reported.
 - I asked my network to test the functionality of the game on their devices, to click every button and check every modal box and to also check for typos, etc. No errors were reported.
 - Finally, as detailed below, I used several validator tools like Nu HTML checker, W3C CSS validator tool, and JSHint to check and no warnings are being flagged at the time of this submission.
 
-## Issues and fixes
+### Issues and fixes
 
 1. Intended outcome: Follow HTML5 best practices with regards to use of Headers. 
    - Issue: The idea was to split the main h1 title in two separate lines for added readability and better display. I first used two h1 with the same main-header class but as pointed out by my mentor best practices recommend to only have one single h1 for the page.
@@ -22,7 +22,7 @@ Features
    - Issue: The game has a main background clip art image with a seaside theme. I was not sure whether to choose a "fixed" or "cover" background-attachment in style.css as ideally I wanted the sun at the top of the image and the sand at the very bottom to both display in all screen sizes. This proved to be impossible as I switched from a "fixed" to a "cover" attachment several times with different commits. In some formats the sun was showing but not the sand, in other formats just the sea in the middle was showing.
    - Fix: I considered changing the background image and tested other images with different commits but ultimately I decided to keep the original background image as it was all in all more suitable for the game. I cropped the top of the original background image with an image editor in an effort to better centre the image vertically in most screens sizes. I finally settled for a fixed background-attachment. There is no size that fits all but I believe that the choices I made are a good compromise:
 
-   ![Image showing background css code](docs/images/doc_background_css.PNG)
+   ![Image showing background css code](docs/images/doc_background.PNG)
 
 4. Intended outcome: Creating three functional buttons with icons representing either rock, paper or scissors. 
    - Issue: I first tried to use an input type inside each button and to assign an icon and styling inside this tag. However, the buttons were not functional/clickable this way.
@@ -31,7 +31,7 @@ Features
    - Issue: At first the CSS grid table used for the leaderboard wasn't centered.
    - Fix: I used the article by Scott Grannneman referenced below where he recommends to center a table by setting the margins, like this:  
 
-   ![Image showing how to center a table in css](docs/images/doc_centre_table_css.PNG])
+   ![Image showing how to center a table in css](docs/images/doc_centre_table.PNG])
 
 6. Intended outcome: Correct width/hight ratio for all png images. 
    - Issue: When adapting size of png images to better fit different screen sizes, I accidentally altered some of the aspect ratios causing the images to look slightly distorted.
@@ -55,7 +55,7 @@ Features
     - When testing with Lighthouse I realised that the site was only achieving an accessibility score of 89. The reason was that the three choice buttons (rock, paper and scissors buttons) did not have an accessibile name. When a button doesn't have an accessible name, screen readers announce it as "button", making it unusable for users who rely on screen readers.
     - Fix: I added an aria-label to each one of the three choice buttons and the accessibility score is now 100.
 
-## Validator testing
+### Validator testing
 - HTML Validator: https://validator.w3.org/nu/
   - Issue found: The validator flagged that the third h3 tag in the current-game-display div was empty of content. The reason why this h3 tag was empty of content was that it simply announces the winner of the round and displays different JS content depending on who wins each round (i.e. "You win", "You lose", "It's a draw").
   - Fix: I simply added three suspension points inside the h3 html tag as placeholder which also adds to the idea of suspense on who is going to win the round.
@@ -69,11 +69,11 @@ Game is now fully validated with no HTML errors.
   - Fix: semi-colons added
 JS code shows no warnings at the time of this submission. As highlited by the JS linter, there are 12 functions in this file. The function with the largest signature takes 1 argument, while the median is 0. The largest function has 21 statements in it, while the median is 2. The most complex function has a cyclomatic complexity value of 14 while the median is 1.
 
-## Contrast testing
+### Contrast testing
 - WCAG Color contrast checker: The score reported was AAA as seen in screenshot below:
 ![WCAG result](docs/images/WCAG_contrast_checker.png)
 
-## Performance, Accessibility, Best practices and SEO testing with Lighthouse
+### Performance, Accessibility, Best practices and SEO testing with Lighthouse
 Test conditions:
 - All lighthouse tests were carried out in incognito mode to avoid interference from browser extensions.
 - All tests were run for both mobile and desktop.
@@ -87,7 +87,7 @@ Lighthouse Scores for Mobile:
 
 ![Ligthouse scores for mobile](docs/images/Lighthouse_mobile.png)
 
-# Deployment
+## Deployment
 This website was deployed using GitHub Pages following the below procedure:
 
 - From the project's repository, click on the Settings tab located in the top navigation bar.
@@ -96,9 +96,9 @@ This website was deployed using GitHub Pages following the below procedure:
 - A message will be displayed to indicate a successful deployment to GitHub pages and provide the live link.
 - You can find the live site via the following URL: [Rock Paper Scissors by the Sea](https://garcia-sonia.github.io/Rock-Paper-Scissors/)
 
-# Credits 
+## Credits 
 
-## Technical Reference
+### Technical Reference
 
 Firstly I would like to thank my mentor Richard Wells and the Community at Code Institute for their guidance and support throughout this JavaScrip Project Portfolio2.
 
@@ -138,12 +138,12 @@ https://granneman.com/webdev/coding/css/centertables
 aria-label by Aditus
 https://www.aditus.io/aria/aria-label/
 
-## Content Inspiration
+### Content Inspiration
 
 All content in the game "Rock Papers Scissors by the Sea" was written by myself.
 The Seaside Pirate theme was inspired by my daughters' ideas as so was the choice of Emojis and Clip art pgn images across the site.
 
-## Media
+### Media
 Background image: Image by London Calling from Pixabay 
 https://pixabay.com/illustrations/summer-clipart-nature-storytelling-5350229/
     
@@ -174,7 +174,7 @@ https://pixabay.com/vectors/rock-paper-scissors-scissors-hand-296853/
 End of game modal image:
 https://www.maxpixel.net/Gold-Ship-Ocean-Pirate-Treasure-Pirate-Ship-3946618
 
-## Other tools and resources
+### Other tools and resources
 
 Fonts were imported from Google fonts
 Website was tested with Chrome DevTools and Lighthouse
