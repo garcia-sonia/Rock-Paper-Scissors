@@ -1,4 +1,28 @@
 # Rock Paper Scissors by the Sea
+
+## Site Overview
+
+This game was developed as part of my second Milestone project with [Code Institute](https://github.com/Code-Institute-Org). It consists of an interactive front-end site built using HTML, CSS and JavaScript.
+
+Rock Paper Sicssors by the Sea is a fun game of rock paper scissors developed for children. The game looks to transmit seaside and holiday vibes and has a fun pirate theme going on.
+
+The goal of the game is for the children to defeat the mighty pirate Redbeard on a game of rock paper scissors. The game was developed with defensive design in mind and directs the user with a clear set of instructions. The game counts with a "Game Rules" button leading, on click, to a modal box pop up displaying the objective and rules of the game. 
+
+The site also validates the data the user inputs (choice of rock, paper, or scissors) and gives feedback to the user where needed. Feedback is provided for each round with text ("You win", "You lose", "It's a draw") and the leaderboard is also updated after each round increasing the score of the child or Redbear depending on who wins the round. Feedback is also provided at the end of the game via an end of game modal box which pops up announcing the winner whenever the children or Redbeard reach a total score of 3 points on the leaderboard.
+
+The game responds to the users' actions, allowing children to actively engage with data and alter the way the site displays the information in response to their actions.
+
+## Target audience
+
+This game was developed for young children, hence the choice of a fun and child friendly pirate theme as this is one of the most classic childhood themes for preschool/school activities and arts and crafts as well as children's parties.
+
+The choice of images across the site is reflective of the target audience and includes fun Clip Art png images like the five mateys and Redbeard png on the leaderboard, the parrot and the rock-paper-scissors trio with googly eyes on the main title and the pirate boat on the game rules modal. 
+
+The vocabulary
+
+The fonts
+
+
 All in one page, 
 choice of font
 choice of png
