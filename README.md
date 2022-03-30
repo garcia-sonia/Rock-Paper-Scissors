@@ -12,52 +12,105 @@ The site also validates the data the user inputs (choice of rock, paper, or scis
 
 The game responds to the users' actions, allowing children to actively engage with data and alter the way the site displays the information in response to their actions.
 
+![Mockup image showing Responsive design on Desktop, Laptop, Tablet and Mobile](docs/images/SG_rps_CI_PP2.PNG)
+
 ## Target audience
 
 This game was developed for young children, hence the choice of a fun and child friendly pirate theme as this is one of the most classic childhood themes for preschool/school activities and arts and crafts as well as children's parties.
 
 The choice of images across the site is reflective of the target audience and includes fun Clip Art png images like the five mateys and Redbeard png on the leaderboard, the parrot and the rock-paper-scissors trio with googly eyes on the main title and the pirate boat on the game rules modal. 
 
-The vocabulary
+The font chosen for the site is the Chelsea market google font as it conveys an appealing look and feel for children and is fun and informal. Chelsea market also blends in well with the site beachy background and the seaside theme.
 
-The fonts
+The vocabulary used across the site addresses the users in a direct and simple way and is child oriented including fun pirate expressions like “matey” or “shiver me timbers”. 
 
+Finally, different emojis are used in the game rules modal and in the round result section as this is a feature generally liked by children.
 
-All in one page, 
-choice of font
-choice of png
-for children
-instructions
-end of modal
-round counter and leader board
-recap rules
-recap end of game modal
-again button
-close button in the other modal
-written in friendly tone with pirates vocabulary
-also no scrolling 
-emojis for children
-child friendly
-incitar with now you show
+The colour palette is bold, bright, and candid including colours like orange, dark blue and white in buttons and fonts. The yellow sun and the light blue sea and sky in the background take a dominant place in the site colour representation.
+
 ## Features
+
 ### Background
+
+-	The background is a Clip Art png image of a beach scene which goes well with the seaside theme.
+-	The background fills the screen and the game is fully visible over the background at a glance without the need to scroll up or down as scrolling would make the game less intuitive and more difficult to interact with by young children.
+- The background is styled with a fixed background attachment and a centered position for optimal display in all screen sizes.
+
+![Screenshot of background image](docs/images/background_image_rps.png)
+
 ### Main header
+
+-	The main header is Rock Paper Scissors by the Sea to again reflect on the seaside theme. 
+
+-	The tile is split in two lines for better readability and is also framed by two fun png images to either side: a friendly rock, paper, scissors trio with googly eyes and a colourful parrot.
+
+-	The position of the title is at the top of the screen and in most screen sizes it will be position above the bright yellow sun in the background image giving it a nice warm contrast and feel.
+
+![Screenshot of main header](docs/images/Header_rps.PNG)
+
 ### Game rules button
+
+-	The games rules button is position between the title and the rock, paper and scissors buttons. On click, this button will open up a modal box containing a set of rules to play the game.
+
+-	The button is blue with an orange border and white fonts. These colours change on hover to reveal a white button with a blue border and orange fonts.
+
+![Screenshot of rules button](docs/images/game_rules_button_rps.PNG)
+
+### Rules modal
+
+-	The rules modal pops up whenever users click on the game rules button. 
+-	The modal lists the rules of the game and also includes a png image of four children aboard a pirate boat, a fun sunglasses emoji and a close button.
+-	The close button will close the rules modal on click and follows the same colour pattern as the game rules button. 
+
+![Screenshot of rules modal](docs/images/rules_modal_rps.PNG)
+
 ### Choice buttons: Rock, Paper, Scissors
-also talk about header now you show
+
+-	This section contains a header: “Rock, Paper, Scissors…now You Show!” as a call to action to incite users to choose one of the below buttons.
+
+-	Each of the three buttons shows a png image of a hand doing the actions of rock, paper and scissors.
+
+-	The buttons have an orange border which turns blue on hover to highlight the button the user is about to press.
+
+![Screenshot of rock, paper and scissors buttons](docs/images/choices_buttons_rps.PNG)
+
 ### Round result
-talk about smileys and 3 different outcomes
+
+-	The round result section is placed just under the choice buttons and returns the user choice as well as Redbeard’s choice of rock, paper, or scissors.
+
+-	The result of each round is also displayed (“You win!”, “You lose!”, or “It’s a draw!”) followed by a grinning, cold sweat or rolling eyes emoji, depending on who wins the round.
+
+![Screenshot of round result when user wins](docs/images/you_win_rps.PNG)
+![Screenshot of round result when user loses](docs/images/you_lose_rps.PNG)
+![Screenshot of round result when it is a draw](docs/images/draw_rps.PNG)
+
 ### Leaderboard
-### Game Rules modal
-including close button
+
+-	The leader board returns the total score of each player adding up the score of consecutive rounds up to a total of 3. (Whenever the user or Redbeard reaches 3 points, an end of game modal will pop up).
+
+-	The board is built on a grid format with one column showing the image of five children with the user’s score under it, and a column showing an image of Redbeard with his total score just below.
+
+![Screenshot of leader board](docs/images/leaderboard_rps.PNG)
+
 ### End of game modal
-including play again button
+
+-	The end of game modal pops up whenever the user or Redbeard reaches 3 points.
+
+-	The modal will announce who is the winner and includes a png image of a pirate boat next to a treasure chest and a bottle containing a treasure map. 
+
+-	The modal also includes a play again button which will close the modal on click and will return to the main game screen where all the scores will be reset for a new game. This button follows the same colour pattern as the game rules button and the close button in the rules modal.
+
+![Screenshot of end of game modal with winner option](docs/images/end_game_win_rps.PNG)
+![Screenshot of end of game modal with loser option](docs/images/end_game_lose_rps.PNG)
+
 ### Features left to implement
+
+- Add a music button to main page with a seaside themed music to listent to on click while playing the game.
 
 ## Testing 
 - I used Edge, Chrome and Firefox desktop browsers to ensure cross-compatibility.
-- I used DevTools to simulate different smaller screen sizes down to 320px in width as well as testing on several personal devices including Android tablets and mobile phones.
-- I asked my mentor and friends and relatives to test the website on Opera and iOS and no errors were reported.
+- I used DevTools to simulate different smaller screen sizes down to 320px in width including Android tablets and mobile phones and iOS devices.
+- I tested in several personal devices and also asked my mentor, friends and relatives to test the site on Opera and iOS and no errors were reported.
 - I asked my network to test the functionality of the game on their devices, to click every button and check every modal box and to also check for typos, etc. No errors were reported.
 - Finally, as detailed below, I used several validator tools like Nu HTML checker, W3C CSS validator tool, and JSHint to check and no warnings are being flagged at the time of this submission.
 
@@ -153,7 +206,7 @@ This website was deployed using GitHub Pages following the below procedure:
 
 Firstly I would like to thank my mentor Richard Wells and the Community at Code Institute for their guidance and support throughout this JavaScrip Project Portfolio2.
 
-I also got inspiration from Ania Kubów's awesome video [3 ways to code Rock Paper Scissors in JavaScript](https://www.youtube.com/watch?v=RwFeg0cEZvQ) and used this as a starting point although overall my JS code varies significantly and contains further features and functions.
+I also got inspiration from Ania Kubów's video [3 ways to code Rock Paper Scissors in JavaScript](https://www.youtube.com/watch?v=RwFeg0cEZvQ) and used this as a starting point although overall my JS code varies significantly (for example using a querySelectorAll calling a class instead of all buttons and incorporating a win() or lose() function in every if statement in the function calculating the result). My JS code also contains further features (like a leader board and a game rules button) and further event listeners and functions (like the ones operating the rules and end of game modals).
 
 Otherwise, I relied mainly upon content from W3schools and CI LMS tutorials for this project. 
 
