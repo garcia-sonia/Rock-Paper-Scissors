@@ -2,13 +2,13 @@
 
 ## Site Overview
 
-This game was developed as part of my second Milestone project with [Code Institute](https://github.com/Code-Institute-Org). It consists of an interactive front-end site built using HTML, CSS and JavaScript.
+This game was developed as part of my second Milestone project with [Code Institute](https://github.com/Code-Institute-Org). It consists of an interactive front-end site built using HTML, CSS, and JavaScript.
 
-Rock Paper Sicssors by the Sea is a fun game of rock paper scissors developed for children. The game looks to transmit seaside and holiday vibes and has a fun pirate theme going on.
+Rock Paper Scissors by the Sea is a fun game of rock paper scissors developed for children. The game looks to transmit seaside and holiday vibes and has a fun pirate theme going on.
 
 The goal of the game is for the children to defeat the mighty pirate Redbeard on a game of rock paper scissors. The game was developed with defensive design in mind and directs the user with a clear set of instructions. The game counts with a "Game Rules" button leading, on click, to a modal box pop up displaying the objective and rules of the game. 
 
-The site also validates the data the user inputs (choice of rock, paper, or scissors) and gives feedback to the user where needed. Feedback is provided for each round with text ("You win", "You lose", "It's a draw") and the leaderboard is also updated after each round increasing the score of the child or Redbear depending on who wins the round. Feedback is also provided at the end of the game via an end of game modal box which pops up announcing the winner whenever the children or Redbeard reach a total score of 3 points on the leaderboard.
+The site also validates the data the user inputs (choice of rock, paper, or scissors) and gives feedback to the user where needed. Feedback is provided for each round with text ("You win", "You lose", "It's a draw") and the leader board is also updated after each round increasing the score of the child or Redbeard depending on who wins the round. Feedback is also provided at the end of the game via an end of game modal box which pops up announcing the winner whenever the children or Redbeard reach a total score of 3 points on the leader board.
 
 The game responds to the users' actions, allowing children to actively engage with data and alter the way the site displays the information in response to their actions.
 
@@ -18,7 +18,7 @@ The game responds to the users' actions, allowing children to actively engage wi
 
 This game was developed for young children, hence the choice of a fun and child friendly pirate theme as this is one of the most classic childhood themes for preschool/school activities and arts and crafts as well as children's parties.
 
-The choice of images across the site is reflective of the target audience and includes fun Clip Art png images like the five mateys and Redbeard png on the leaderboard, the parrot and the rock-paper-scissors trio with googly eyes on the main title and the pirate boat on the game rules modal. 
+The choice of images across the site is reflective of the target audience and includes fun Clip Art png images like the five mateys and Redbeard png on the leader board, the parrot and the rock-paper-scissors trio with googly eyes on the main title and the pirate boat on the game rules modal. 
 
 The font chosen for the site is the Chelsea market google font as it conveys an appealing look and feel for children and is fun and informal. Chelsea market also blends in well with the site beachy background and the seaside theme.
 
@@ -26,7 +26,7 @@ The vocabulary used across the site addresses the users in a direct and simple w
 
 Finally, different emojis are used in the game rules modal and in the round result section as this is a feature generally liked by children.
 
-The colour palette is bold, bright, and candid including colours like orange, dark blue and white in buttons and fonts. The yellow sun and the light blue sea and sky in the background take a dominant place in the site colour representation.
+The colour palette is bright, and candid including colours like orange, dark blue and white in buttons and fonts. The yellow sun and the light blue sea and sky in the background take a dominant place in the site colour representation.
 
 ## Features
 
@@ -34,7 +34,7 @@ The colour palette is bold, bright, and candid including colours like orange, da
 
 -	The background is a Clip Art png image of a beach scene which goes well with the seaside theme.
 -	The background fills the screen and the game is fully visible over the background at a glance without the need to scroll up or down as scrolling would make the game less intuitive and more difficult to interact with by young children.
-- The background is styled with a fixed background attachment and a centered position for optimal display in all screen sizes.
+- The background is styled with a fixed background attachment and a centred position for optimal display in all screen sizes.
 
 ![Screenshot of background image](docs/images/background_image_rps.png)
 
@@ -66,7 +66,7 @@ The colour palette is bold, bright, and candid including colours like orange, da
 
 ### Choice buttons: Rock, Paper, Scissors
 
--	This section contains a header: “Rock, Paper, Scissors…now You Show!” as a call to action to incite users to choose one of the below buttons.
+-	This section contains a header: “Rock, Paper, Scissors…now You Show!” as a call to action to encourage users to choose one of the below buttons.
 
 -	Each of the three buttons shows a png image of a hand doing the actions of rock, paper and scissors.
 
@@ -84,7 +84,7 @@ The colour palette is bold, bright, and candid including colours like orange, da
 ![Screenshot of round result when user loses](docs/images/you_lose_rps.PNG)
 ![Screenshot of round result when it is a draw](docs/images/draw_rps.PNG)
 
-### Leaderboard
+### Leader board
 
 -	The leader board returns the total score of each player adding up the score of consecutive rounds up to a total of 3. (Whenever the user or Redbeard reaches 3 points, an end of game modal will pop up).
 
@@ -105,7 +105,7 @@ The colour palette is bold, bright, and candid including colours like orange, da
 
 ### Features left to implement
 
-- Add a music button to main page with a seaside themed music to listent to on click while playing the game.
+- Add a music button to main page with a seaside themed music to listen to on click while playing the game.
 
 ## Testing 
 - I used Edge, Chrome and Firefox desktop browsers to ensure cross-compatibility.
@@ -130,18 +130,18 @@ The colour palette is bold, bright, and candid including colours like orange, da
 
 4. Intended outcome: Creating three functional buttons with icons representing either rock, paper or scissors. 
    - Issue: I first tried to use an input type inside each button and to assign an icon and styling inside this tag. However, the buttons were not functional/clickable this way.
-   - Fix: I deciced to just leave the button tag in the HTML file and to remove the input type. I then styled the buttons in the CSS file with the help of background images. This resulted in perfectly functional buttons.
-5. Intended outcome: Leaderboard well centered on screen. 
-   - Issue: At first the CSS grid table used for the leaderboard wasn't centered.
-   - Fix: I used the article by Scott Grannneman referenced below where he recommends to center a table by setting the margins, like this:  
+   - Fix: I decided to just leave the button tag in the HTML file and to remove the input type. I then styled the buttons in the CSS file with the help of background images. This resulted in perfectly functional buttons.
+5. Intended outcome: Leader board well centred on screen. 
+   - Issue: At first the CSS grid table used for the leader board wasn't centred.
+   - Fix: I used the article by Scott Grannneman referenced below where he recommends to centre a table by setting the margins, like this:  
 
-   ![Image showing how to center a table in css](docs/images/doc_centre_table.PNG)
+   ![Image showing how to centre a table in css](docs/images/doc_centre_table.PNG)
 
 6. Intended outcome: Correct width/hight ratio for all png images. 
    - Issue: When adapting size of png images to better fit different screen sizes, I accidentally altered some of the aspect ratios causing the images to look slightly distorted.
    - Fix: I set all of the images to the correct aspect ratio by just setting the width to auto as I wanted to preserve the height in pixels that I had assigned.   
 7. Intended outcome: Create a JS function to generate the computer choice of rock, paper or scissors. 
-   - Issue: I first used an array composed of ['rock', 'paper', 'scissors'] to use this with a Math.Random function but this didn't give me the expected random choice result and 'rock' wasn't picked. I do not fully understand why 'rock' wasn't piced but I ended up having to add an ackward ||'rock' in the code to ensure a random computer choice where 'rock' would be also picked. However, this didn't look right and I decided to change this on my mentor's advice. 
+   - Issue: I first used an array composed of ['rock', 'paper', 'scissors'] to use this with a Math.Random function but this didn't give me the expected random choice result and 'rock' wasn't picked. I do not fully understand why 'rock' wasn't picked but I ended up having to add an ackward ||'rock' in the code to ensure a random computer choice where 'rock' would be also picked. However, this didn't look right and I decided to change this on my mentor's advice. 
    - Fix: I deleted the constant choices=['rock', 'paper', 'scissors'] and replaced with if statements linked to anyNumber from 1 to 3 in order to generate the computer choice. This fix brings simplicity and better randomness of computer choice. The JS code is now longer than before but it is fully functional.
 8. Intended outcome: Avoid targeting all buttons when declaring the constant differentChoices with a querySelectorAll.
    - Issue: This practice could create conflicts with other buttons that I didn't want to target (like the game rules button, the close button or the play again button). Instead, target only the choice buttons (rock, paper, scissors)
@@ -171,7 +171,7 @@ Game is now fully validated with no HTML errors.
 - JavaScrip Validator: https://jshint.com/
   - Issue found: missing semi-colons at the end of several lines.
   - Fix: semi-colons added
-JS code shows no warnings at the time of this submission. As highlited by the JS linter, there are 12 functions in this file. The function with the largest signature takes 1 argument, while the median is 0. The largest function has 21 statements in it, while the median is 2. The most complex function has a cyclomatic complexity value of 14 while the median is 1.
+JS code shows no warnings at the time of this submission. As highlighted by the JS linter, there are 12 functions in this file. The function with the largest signature takes 1 argument, while the median is 0. The largest function has 21 statements in it, while the median is 2. The most complex function has a cyclomatic complexity value of 14 while the median is 1.
 
 ### Contrast testing
 - WCAG Color contrast checker: The score reported was AAA as seen in screenshot below:
@@ -185,11 +185,11 @@ Test conditions:
 
 Lighthouse Scores for Desktop:
 
-![Ligthouse scores for desktop](docs/images/Lighthouse_desktop.PNG)
+![Lighthouse scores for desktop](docs/images/Lighthouse_desktop.PNG)
   
 Lighthouse Scores for Mobile:
 
-![Ligthouse scores for mobile](docs/images/Lighthouse_mobile.png)
+![Lighthouse scores for mobile](docs/images/Lighthouse_mobile.png)
 
 ## Deployment
 This website was deployed using GitHub Pages following the below procedure:
@@ -202,6 +202,9 @@ This website was deployed using GitHub Pages following the below procedure:
 
 ## Credits 
 
+All content in the game "Rock Papers Scissors by the Sea" was written by myself.
+The Seaside Pirate theme was inspired by my daughters' ideas as so was the choice of Emojis and Clip art png images across the site.
+
 ### Technical Reference
 
 Firstly I would like to thank my mentor Richard Wells and the Community at Code Institute for their guidance and support throughout this JavaScrip Project Portfolio2.
@@ -210,79 +213,56 @@ I also got inspiration from Ania Kubów's video [3 ways to code Rock Paper Sciss
 
 Otherwise, I relied mainly upon content from W3schools and CI LMS tutorials for this project. 
 
-CSS Grid Layout Module
-https://www.w3schools.com/css/css_grid.asp
+[CSS Grid Layout Module](https://www.w3schools.com/css/css_grid.asp)
 
-How to position a background image
-https://www.w3schools.com/cssref/pr_background-position.asp
+[How to position a background image](https://www.w3schools.com/cssref/pr_background-position.asp)
 
-HTML DOM Document querySelectorAll()
-https://www.w3schools.com/jsref/met_document_queryselectorall.asp
+[HTML DOM Document querySelectorAll()](https://www.w3schools.com/jsref/met_document_queryselectorall.asp)
 
-JavaScript Arrow Function
-https://www.w3schools.com/js/js_arrow_function.asp
+[JavaScript Arrow Function](https://www.w3schools.com/js/js_arrow_function.asp)
 
-HTML DOM Element addEventListener()
-https://www.w3schools.com/jsref/met_element_addeventlistener.asp
+[HTML DOM Element addEventListener()](https://www.w3schools.com/jsref/met_element_addeventlistener.asp)
 
-JavaScript Math.floor()
-https://www.w3schools.com/jsref/jsref_floor.asp
+[JavaScript Math.floor()](https://www.w3schools.com/jsref/jsref_floor.asp)
 
-JavaScript if else and else if
-https://www.w3schools.com/js/js_if_else.asp
+[JavaScript if else and else if](https://www.w3schools.com/js/js_if_else.asp)
 
-How TO - CSS/JS Modal
-https://www.w3schools.com/howto/howto_css_modals.asp
+[How TO - CSS/JS Modal](https://www.w3schools.com/howto/howto_css_modals.asp)
 
 Finally, I used the following references to help fix some of the bugs described in previous sections:
 
-Center a table with CSS by Scott Grannneman
-https://granneman.com/webdev/coding/css/centertables
+[Center a table with CSS by Scott Grannneman](https://granneman.com/webdev/coding/css/centertables)
 
-aria-label by Aditus
-https://www.aditus.io/aria/aria-label/
-
-### Content Inspiration
-
-All content in the game "Rock Papers Scissors by the Sea" was written by myself.
-The Seaside Pirate theme was inspired by my daughters' ideas as so was the choice of Emojis and Clip art pgn images across the site.
+[aria-label by Aditus](https://www.aditus.io/aria/aria-label/)
 
 ### Media
-Background image: Image by London Calling from Pixabay 
-https://pixabay.com/illustrations/summer-clipart-nature-storytelling-5350229/
+[Background image: Image by London Calling from Pixabay](https://pixabay.com/illustrations/summer-clipart-nature-storytelling-5350229/)
     
-Main title parrot image: clipartmax
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.clipartmax.com%2Fmiddle%2Fm2i8K9G6i8i8b1Z5_parrot-talking-bird-clip-art-parrot-clipart%2F&psig=AOvVaw3wSHrWUGVbukQMN7DqfOBz&ust=1648189991827000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLDPpKmQ3vYCFQAAAAAdAAAAABAD
+[Main title parrot image: clipartmax](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.clipartmax.com%2Fmiddle%2Fm2i8K9G6i8i8b1Z5_parrot-talking-bird-clip-art-parrot-clipart%2F&psig=AOvVaw3wSHrWUGVbukQMN7DqfOBz&ust=1648189991827000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLDPpKmQ3vYCFQAAAAAdAAAAABAD)
 
-Main title rock paper scissors image:
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.clipartmax.com%2Fmiddle%2Fm2H7N4b1b1Z5N4K9_rock-paper-scissors-rock-paper-scissors%2F&psig=AOvVaw2DAfZw6DqAT_NiOV9T8t9P&ust=1648190236347000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOjq_KSR3vYCFQAAAAAdAAAAABAD
+[Main title rock paper scissors image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.clipartmax.com%2Fmiddle%2Fm2H7N4b1b1Z5N4K9_rock-paper-scissors-rock-paper-scissors%2F&psig=AOvVaw2DAfZw6DqAT_NiOV9T8t9P&ust=1648190236347000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOjq_KSR3vYCFQAAAAAdAAAAABAD)
 
-Game Rules modal image: png wing
-https://www.pngwing.com/en/free-png-puqtw
+[Game Rules modal image: png wing](https://www.pngwing.com/en/free-png-puqtw)
 
-Five Mateys image in Leaderboard: Flyclipart
-https://flyclipart.com/st-michael-all-angels-lusitania-clipart-12621
+[Five Mateys image in Leaderboard: Flyclipart](https://flyclipart.com/st-michael-all-angels-lusitania-clipart-12621)
 
-Redbeard image in Leaderboard: Flyclipart
-https://flyclipart.com/free-pirate-clip-art-look-at-pirate-clip-art-clip-art-images-pirate-clipart-153912
+[Redbeard image in Leaderboard: Flyclipart](https://flyclipart.com/free-pirate-clip-art-look-at-pirate-clip-art-clip-art-images-pirate-clipart-153912)
 
-Rock button image:
-https://pixabay.com/vectors/rock-paper-scissors-rock-hand-296854/
+[Rock button image](https://pixabay.com/vectors/rock-paper-scissors-rock-hand-296854/)
 
-Paper button image:
-https://pixabay.com/vectors/rock-paper-scissors-paper-hand-296855/
+[Paper button image](https://pixabay.com/vectors/rock-paper-scissors-paper-hand-296855/)
 
-Scissors button image:
-https://pixabay.com/vectors/rock-paper-scissors-scissors-hand-296853/
+[Scissors button image](https://pixabay.com/vectors/rock-paper-scissors-scissors-hand-296853/)
 
-End of game modal image:
-https://www.maxpixel.net/Gold-Ship-Ocean-Pirate-Treasure-Pirate-Ship-3946618
+[End of game modal image](https://www.maxpixel.net/Gold-Ship-Ocean-Pirate-Treasure-Pirate-Ship-3946618)
+
+[Emojis](https://www.science.co.il/internet/html/Smileys.php)
 
 ### Other tools and resources
 
-Fonts were imported from Google fonts
-Website was tested with Chrome DevTools and Lighthouse
-JS compliance was tested using [JSHint](https://jshint.com/)
-CSS was validated with [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/validator)
-HTML was validated with [Nu Html Checker](https://validator.w3.org/nu/#textarea)
-Mockups to show Responsive Design were taken using [Am I Responsive](http://ami.responsivedesign.is/)
+- Fonts were imported from Google fonts
+- Website was tested with Chrome DevTools and Lighthouse
+- JS compliance was tested using [JSHint](https://jshint.com/)
+- CSS was validated with [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/validator)
+- HTML was validated with [Nu Html Checker](https://validator.w3.org/nu/#textarea)
+- Mockups to show Responsive Design were taken using [Am I Responsive](http://ami.responsivedesign.is/)
